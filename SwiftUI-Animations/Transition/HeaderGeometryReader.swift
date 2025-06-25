@@ -20,7 +20,6 @@ struct HeaderGeometryReader: View {
             }
             Task {
                 offset = proxy.frame(in: .global).minY - startOffset
-                
                 withAnimation(.easeInOut) {
                     collapsed = offset < Constants.minHeaderOffset
                 }
