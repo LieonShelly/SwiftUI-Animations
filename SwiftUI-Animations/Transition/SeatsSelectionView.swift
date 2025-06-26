@@ -42,7 +42,9 @@ struct SeatsSelectionView: View {
             
             Spacer()
             
-            Text("Something is missing here!")
+            SeatingChartView()
+                .aspectRatio(1.0, contentMode: .fit)
+                .padding()
             
             Spacer()
             

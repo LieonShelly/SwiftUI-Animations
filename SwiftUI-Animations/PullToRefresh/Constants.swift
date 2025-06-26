@@ -29,4 +29,7 @@ enum Constants {
     static let minHeaderHeight = 120.0
 
     static let floatingButtonWidth = 110.0
+    
+    
+    static let stadiumSectorsCount = 4
 }
