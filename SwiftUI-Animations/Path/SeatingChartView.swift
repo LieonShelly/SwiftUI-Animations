@@ -14,6 +14,49 @@ struct SeatingChartView: View {
     @State private var selectedTribune: Tribune? = nil
     @State private var zoom = 1.25
     @State private var zoomAnchor = UnitPoint.center
+    @GestureState private var drag: CGSize = .zero
+    @GestureState private var manualZoom = 1.0
+    @GestureState private var currentRotation: Angle = .radians(0)
+    @State private var offset: CGSize = .zero
+    @State private var rotation = Angle(radians: .pi / 2)
+    @Binding var zoomed: Bool
+    @Binding var selectedTicketsNumber: Int
+    
+    var dragging: some Gesture {
+        DragGesture()
+            // gestureState 与 drag 进行了绑定
+            .updating($drag) { currentState, gestureState, transaction in
+                // 将当前拖动的value赋值给gestureState，
+                gestureState = currentState.translation
+            }
+            .onEnded {
+                // 手势停止时，保留当前的位置
+                offset = offset + $0.translation
+            }
+    }
+    
+    var magnification: some Gesture {
+        MagnifyGesture()
+            .updating($manualZoom) { currentState, gestureState, transaction in
+                gestureState = currentState.magnification
+            }
+            .onEnded {
+                zoom *= $0.magnification
+                withAnimation {
+                    zoomed = zoom > 1.25
+                }
+            }
+    }
+    
+    var rotationGesture: some Gesture {
+        RotateGesture()
+            .updating($currentRotation) { currentState, gestureState, transaction in
+                gestureState = .radians(currentState.rotation.radians)
+            }
+            .onEnded {
+                rotation += Angle(radians: $0.rotation.radians)
+            }
+    }
     
     var body: some View {
         GeometryReader { proxy in
@@ -52,9 +95,15 @@ struct SeatingChartView: View {
                         }
                 }
             }
-            .rotationEffect(.radians(.pi / 2))
+            .scaleEffect(zoom * manualZoom, anchor: zoomAnchor)
+            .rotationEffect(rotation + currentRotation, anchor: zoomAnchor)
+            // 当前位置: 上一次最后的位置 + 当前的偏移
+            .offset(offset + drag)
+            .simultaneousGesture(dragging)
+            .simultaneousGesture(magnification)
+            .simultaneousGesture(rotationGesture)
             .coordinateSpace(name: "stadium")
-            .scaleEffect(zoom, anchor: zoomAnchor)
+           
             .onChange(of: tribunes) { oldValue, newValue in
 //                guard newValue.keys.count == Constants.stadiumSectorsCount else { return }
                 withAnimation {
@@ -65,3 +114,8 @@ struct SeatingChartView: View {
     }
 }
 
+extension CGSize {
+    static func +(left: CGSize, right: CGSize) -> CGSize {
+        return CGSize(width: left.width + right.width, height: left.height + right.height)
+    }
+}

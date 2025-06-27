@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SeatsSelectionView: View {
     var event: Event
+    @State private var stadiumZoomed = false
+    @State private var selectedTicketsNumber: Int = 0
+    @State private var ticketsPurchased: Bool = false
     
     var body: some View {
         VStack {
@@ -42,9 +45,12 @@ struct SeatsSelectionView: View {
             
             Spacer()
             
-            SeatingChartView()
-                .aspectRatio(1.0, contentMode: .fit)
-                .padding()
+            SeatingChartView(
+                zoomed: $stadiumZoomed,
+                selectedTicketsNumber: $selectedTicketsNumber
+            )
+            .aspectRatio(1.0, contentMode: .fit)
+            .padding()
             
             Spacer()
             
