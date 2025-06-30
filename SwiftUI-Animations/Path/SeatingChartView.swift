@@ -21,6 +21,9 @@ struct SeatingChartView: View {
     @State private var rotation = Angle(radians: .pi / 2)
     @Binding var zoomed: Bool
     @Binding var selectedTicketsNumber: Int
+    @State private var selectedSeats: [Seat] = []
+    @State private var seatsPercentage: CGFloat = .zero
+    
     
     var dragging: some Gesture {
         DragGesture()
@@ -81,18 +84,27 @@ struct SeatingChartView: View {
                             tribune.path.trim(from: 0, to: percentage)
                                 .fill(selectedTribune == tribune ? .white : .blue)
                         )
-                        .onTapGesture(coordinateSpace: .named("stadium")) { tap in
-                            let unselected = tribune == selectedTribune
-                            let anchor = UnitPoint(x: tap.x / proxy.size.width, y: tap.y / proxy.size.height)
-                            LinkedAnimation.easeInOut(for: 0.7) {
-                                zoom = unselected ? 1.25 : 12
-                            }
-                            .link(to: .easeInOut(for: 0.3, action: {
-                                selectedTribune = unselected ? nil : tribune
-                                zoomAnchor = unselected ? .center : anchor
-                            }),
-                                  reverse: !unselected)
+                }
+                
+                if let selectedTribune {
+                    ForEach(selectedTribune.seats, id: \.self) { seat in
+                        ZStack {
+                            seat.path
+                                .trim(from: 0, to: seatsPercentage)
+                                .fill(selectedSeats.contains(seat) ? .green : .blue)
+                            
+                            seat.path
+                                .trim(from: 0, to: seatsPercentage)
+                                .stroke(.black, lineWidth: 0.05)
                         }
+                    }
+                }
+            }
+            .onTapGesture { tap in
+                if let selectedTribune, selectedTribune.path.contains(tap) {
+                    findAndSelectSeat(at: tap, in: selectedTribune)
+                } else {
+                    findAndSelectTribune(at: tap, with: proxy)
                 }
             }
             .scaleEffect(zoom * manualZoom, anchor: zoomAnchor)
@@ -111,6 +123,46 @@ struct SeatingChartView: View {
                 }
             }
         }
+    }
+    
+    private func findAndSelectSeat(at point: CGPoint, in selectedTribune: Tribune) {
+        guard let seat = selectedTribune.seats.first(where: { $0.path.boundingRect.contains(point) }) else {
+            return
+        }
+        withAnimation(.easeInOut) {
+            if let index = selectedSeats.firstIndex(of: seat) {
+                selectedTicketsNumber -= 1
+                selectedSeats.remove(at: index)
+            } else {
+                selectedTicketsNumber += 1
+                selectedSeats.append(seat)
+            }
+        }
+    }
+    
+    private func findAndSelectTribune(at point: CGPoint, with proxy: GeometryProxy) {
+        let tribune = tribunes.flatMap(\.value).first(where: { $0.path.boundingRect.contains(point) })
+        let unselected = tribune == selectedTribune
+        let anchor = UnitPoint(x: point.x / proxy.size.width, y: point.y / proxy.size.height)
+        
+        seatsPercentage = selectedTribune == nil || !unselected ? 0 : 1
+        
+        LinkedAnimation.easeInOut(for: 0.7) {
+            zoom = unselected ? 1.25 : 25
+            seatsPercentage = unselected ? 0 : 1
+            zoomed = !unselected
+        }
+        .link(
+            to: .easeInOut(
+                for: 0.3,
+                action: {
+                    selectedTribune = unselected ? nil : tribune
+                    zoomAnchor = unselected ? .center : anchor
+                    offset = .zero
+                }
+            ),
+            reverse: !unselected
+        )
     }
 }
 

@@ -94,3 +94,14 @@
 
 - **HeaderGeometryReader** 是一个“滚动监听器”，专门用于捕捉 Header 的滚动偏移，并驱动 Header 的收缩动画。
 - **在 EventDetailsView 中**，它作为 ScrollView 的子视图，负责实时更新 offset 和 collapsed 状态，进而影响整个详情页头部的交互和动画体验。
+
+
+
+- 在SwiftUI中，some 关键字的作用是什么
+    - 在 SwiftUI 中，some 是 Swift 的一种 “opaque type”（不透明类型）语法，表示“返回某种具体类型，但我不告诉你具体是哪种类型”。
+    - some View 表示：这个函数/属性返回的是某种具体符合 View 协议的类型，但具体是什么类型，调用者不需要知道。
+    - 在 SwiftUI 中，每一个 View 都是一个结构体类型，比如：
+        - Text("Hello") 是 Text
+        - VStack { ... } 是 VStack<TupleView<...>>
+        - Button { ... } 是 Button<Label>
+    - 因为 SwiftUI 的视图组合结构极其复杂、嵌套很深，所以： 返回 some View 可以隐藏具体返回类型，使代码更简洁、类型安全。

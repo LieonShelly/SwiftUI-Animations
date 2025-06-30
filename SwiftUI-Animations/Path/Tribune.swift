@@ -9,9 +9,19 @@ import SwiftUI
 
 struct Tribune: Hashable, Equatable {
     var path: Path
+    var seats: [Seat]
     
     public func hash(into hasher: inout Hasher) {
         hasher.combine(path.description)
     }
 }
 
+
+
+struct Seat: Hashable, Equatable {
+  var path: Path
+
+  public func hash(into hasher: inout Hasher) {
+    hasher.combine(path.description)
+  }
+}
