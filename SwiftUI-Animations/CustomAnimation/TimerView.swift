@@ -72,6 +72,10 @@ struct TimerView: View {
                     .padding([.top], 15)
                 Spacer()
             }
+            .padding()
+            .background {
+                backGroundGradient.ignoresSafeArea()
+            }
         }
         .onAppear {
             timerManager.setTime(length: brewTimer.timerLength)
@@ -82,7 +86,23 @@ struct TimerView: View {
         .toolbarBackground(.visible, for: .navigationBar)
         .font(.largeTitle)
         .onChange(of: timerManager.status) { oldValue, newValue in
-            
+            switch newValue {
+            case .done:
+                showDone = brewTimer
+            case .running:
+                animatePause = false
+                withAnimation(.linear(duration: 1.0).repeatForever(autoreverses: false)) {
+                    animateTimer = true
+                }
+            case .paused:
+                animateTimer = false
+                withAnimation(.easeIn(duration: 0.5).repeatForever()) {
+                    animatePause = true
+                }
+            default:
+                animateTimer = false
+                animatePause = false
+            }
         }
         .sheet(item: $showDone) { timer in
             
@@ -93,4 +113,37 @@ struct TimerView: View {
 
 #Preview {
     TimerView(brewTimer: BrewTime.previewObject)
+}
+
+
+
+import SwiftUI
+
+struct TimerCompleteView: View {
+    var timer: BrewTime
+    
+    let backGroundGradient = LinearGradient(
+      colors: [Color("BlackRussian"), Color("DarkOliveGreen"), Color("OliveGreen")],
+      startPoint: .init(x: 0.75, y: 0),
+      endPoint: .init(x: 0.25, y: 1)
+    )
+    
+    var body: some View {
+        ZStack {
+            backGroundGradient.ignoresSafeArea()
+            VStack(spacing: 10) {
+                Text("Brew Timer Complete")
+                    .font(.largeTitle)
+                Text("Your \(timer.timerName) tea should be ready. Enjoy.")
+            }
+            .padding(20)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color("QuarterSpanishWhite"))
+            )
+        }
+        .foregroundColor(
+          Color("BlackRussian")
+        )
+    }
 }
