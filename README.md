@@ -87,7 +87,6 @@
   - 这些状态又被传递给 `HeaderView` 和其他 UI 组件，实现 Header 的动态收缩、按钮的显示/隐藏等动画效果。
 
 - 例如，`HeaderView` 会根据 `offset` 和 `collapsed` 的值调整自身的显示方式；而浮动按钮（collapsedButton）只在 Header 收起时显示。
-
 ---
 
 ### 总结

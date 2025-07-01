@@ -264,3 +264,4 @@ struct SeatShape: Shape {
         }
     }
 }
+
