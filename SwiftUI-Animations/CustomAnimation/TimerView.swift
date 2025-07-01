@@ -45,6 +45,31 @@ struct TimerView: View {
         NavigationStack {
             VStack {
                 BrewInfoView(brewTimer: brewTimer, amountOfWater: $amountOfWater)
+                CountingTimerView(timerManager: timerManager)
+                    .frame(maxWidth: .infinity)
+                    .overlay {
+                        switch timerManager.status {
+                        case .running:
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(animationGradient, lineWidth: 10)
+                        case .paused:
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(.blue, lineWidth: 10)
+                                .opacity(animatePause ? 0.2 : 1.0)
+                        default:
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(timerBorderColor, lineWidth: 5)
+                        }
+                    }
+                    .padding(15)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(
+                                Color("QuarterSpanishWhite")
+                            )
+                    )
+                    .padding([.leading, .trailing], 5)
+                    .padding([.top], 15)
                 Spacer()
             }
         }

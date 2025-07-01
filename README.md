@@ -104,3 +104,21 @@
         - VStack { ... } 是 VStack<TupleView<...>>
         - Button { ... } 是 Button<Label>
     - 因为 SwiftUI 的视图组合结构极其复杂、嵌套很深，所以： 返回 some View 可以隐藏具体返回类型，使代码更简洁、类型安全。
+
+- Animatable 协议的作用
+    - 让自定义视图的某些属性可以被动画驱动，即在属性值发生变化时，SwiftUI 能够自动插值（interpolate）这些属性，从而实现平滑动画效果。
+    - 只要视图的 animatableData 属性发生变化，SwiftUI 就会自动在旧值和新值之间插值，并多次重绘视图，形成动画。
+
+    ```Swift
+    struct SlidingNumber: View, Animatable {
+        var number: Double
+
+        var animatableData: Double {
+            get { number }
+            set { number = newValue }
+        }
+        // ...
+    }
+    ```
+    - 这里 number 就是动画驱动的属性。当你对 SlidingNumber 的 number 属性做动画（比如用 .animation(.easeInOut)），SwiftUI 会自动让 number 从旧值平滑过渡到新值，并在每一帧调用 body，让 UI 跟随变化。
+    这样就能实现数字平滑滚动的动画效果。
