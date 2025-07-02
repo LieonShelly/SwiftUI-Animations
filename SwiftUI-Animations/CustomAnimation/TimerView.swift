@@ -10,7 +10,7 @@ import SwiftUI
 struct TimerView: View {
     @StateObject var timerManager = TimerManager(length: 0)
     @State var brewTimer: BrewTime
-    @State var showDone: BrewTime?
+    @State var showDone = false
     @State var amountOfWater = 0.0
     @State var animateTimer = false
     @State var animatePause = false
@@ -44,32 +44,14 @@ struct TimerView: View {
     var body: some View {
         NavigationStack {
             VStack {
-              
-                CountingTimerView(timerManager: timerManager)
-                    .frame(maxWidth: .infinity)
-                    .overlay {
-                        switch timerManager.status {
-                        case .running:
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(animationGradient, lineWidth: 10)
-                        case .paused:
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(.blue, lineWidth: 10)
-                                .opacity(animatePause ? 0.2 : 1.0)
-                        default:
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(timerBorderColor, lineWidth: 5)
-                        }
-                    }
-                    .padding(15)
+                AnalogTimerView(timerFinished: $showDone, timer: brewTimer)
+                    .padding(8)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .fill(
                                 Color("QuarterSpanishWhite")
                             )
                     )
-                    .padding([.leading, .trailing], 5)
-                    .padding([.top], 15)
                 
                 ScrollView {
                     BrewInfoView(brewTimer: brewTimer, amountOfWater: $amountOfWater)
@@ -91,28 +73,6 @@ struct TimerView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .font(.largeTitle)
-        .onChange(of: timerManager.status) { oldValue, newValue in
-            switch newValue {
-            case .done:
-                showDone = brewTimer
-            case .running:
-                animatePause = false
-                withAnimation(.linear(duration: 1.0).repeatForever(autoreverses: false)) {
-                    animateTimer = true
-                }
-            case .paused:
-                animateTimer = false
-                withAnimation(.easeIn(duration: 0.5).repeatForever()) {
-                    animatePause = true
-                }
-            default:
-                animateTimer = false
-                animatePause = false
-            }
-        }
-        .sheet(item: $showDone) { timer in
-            
-        }
     }
 }
 
@@ -120,4 +80,5 @@ struct TimerView: View {
 #Preview {
     TimerView(brewTimer: BrewTime.previewObject)
 }
+
 
