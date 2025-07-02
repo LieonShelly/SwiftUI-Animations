@@ -44,7 +44,7 @@ struct TimerView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                BrewInfoView(brewTimer: brewTimer, amountOfWater: $amountOfWater)
+              
                 CountingTimerView(timerManager: timerManager)
                     .frame(maxWidth: .infinity)
                     .overlay {
@@ -70,7 +70,13 @@ struct TimerView: View {
                     )
                     .padding([.leading, .trailing], 5)
                     .padding([.top], 15)
-                Spacer()
+                
+                ScrollView {
+                    BrewInfoView(brewTimer: brewTimer, amountOfWater: $amountOfWater)
+                    if !brewTimer.evaluation.isEmpty {
+                        EvaluationListView(result: brewTimer.evaluation)
+                    }
+                }
             }
             .padding()
             .background {
@@ -114,3 +120,4 @@ struct TimerView: View {
 #Preview {
     TimerView(brewTimer: BrewTime.previewObject)
 }
+

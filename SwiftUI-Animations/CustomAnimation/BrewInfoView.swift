@@ -11,10 +11,13 @@ struct BrewInfoView: View {
     var brewTimer: BrewTime
     @Binding var amountOfWater: Double
     @State var brewingTemp = 0
+    @State var waterTeaRatio: Double?
     
     var teaToUse: Double {
-      let tspPerOz = brewTimer.teaAmount / brewTimer.waterAmount
-      return tspPerOz * amountOfWater
+        guard let waterTeaRatio = waterTeaRatio else {
+          return brewTimer.waterAmount / brewTimer.teaAmount
+        }
+        return round(amountOfWater / waterTeaRatio * 100) / 100.0
     }
     
     struct HeadingText: ViewModifier {
@@ -50,13 +53,13 @@ struct BrewInfoView: View {
             
             Text("Amount of Tea to Use")
               .modifier(HeadingText())
-            Text("\(teaToUse.formatted()) teaspoons")
-              .modifier(InformationText())
-            
-        }
-        .onAppear {
-            withAnimation(.easeIn(duration: 0.5)) {
-                brewingTemp = brewTimer.temperature
+            HStack(alignment: .bottom) {
+                Text("\(teaToUse.formatted()) teaspoons")
+                  .modifier(InformationText())
+                Spacer()
+                PopupSelectionButton(
+                    currentValue: $waterTeaRatio,
+                    values: [1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0])
             }
         }
         .padding()
@@ -76,3 +79,4 @@ struct BrewInfoView: View {
 #Preview(body: {
     BrewInfoView(brewTimer: BrewTime.previewObject, amountOfWater: .constant(4))
 })
+
