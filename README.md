@@ -1,5 +1,7 @@
 # SwiftUI-Animations
-
+```
+该工程是我学习 SwiftUI Animations by Tutorials-2022 中的示例代码，为了加强记忆，这些代码均是我一字一句敲出来的。
+```
 - matchedGeometryEffect 方法的作用是什么
     - matchedGeometryEffect 是 SwiftUI 中非常强大和直观的 “共享元素动画” 工具，它允许你在 两个视图之间创建平滑的动画过渡。
     - 跨视图动画

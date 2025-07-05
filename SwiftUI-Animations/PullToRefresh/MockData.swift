@@ -82,3 +82,5 @@ let teams = [
     Team(name: "Cincinnati Bearcats", sport: .football, description: "The Cincinnati Bearcats football program represents the University of Cincinnati in college football, they compete at the NCAA Division I Football Bowl Subdivision level as members of the American Athletic Conference."),
     Team(name: "Tulsa Golden Hurricane", sport: .football, description: "The Tulsa Golden Hurricane football program represents the University of Tulsa in college football at the NCAA Division I Football Bowl Subdivision level. Tulsa has competed in the American Athletic Conference since the 2014 season and was previously a member of Conference USA.")
 ]
+
+
