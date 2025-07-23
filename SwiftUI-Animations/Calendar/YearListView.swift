@@ -17,17 +17,18 @@ struct YearListView: View {
     @State var selectedId: String = "0"
     
     var body: some View {
-        NavigationStack {
+        GeometryReader { proxy in
             ScrollView {
                 yearView()
             }
             .background(.red)
-            .navigationTitle("Calendar")
-            .navigationDestination(isPresented: $showMonthList) {
-                monthView()
-                    .navigationTransition(.zoom(sourceID: selectedId, in: animationNamespace))
+            .overlay {
+                monthView(proxy)
+                    .coordinateSpace(.named("animation"))
             }
+            .coordinateSpace(.named("animation"))
         }
+       
     }
     
    
@@ -46,45 +47,46 @@ struct YearListView: View {
     }
     
     func item(id: String) -> some View {
-        ZStack {
+        GeometryReader { itemProxy in
             Rectangle()
-                .fill(Color.random)
+                .fill(Color.green)
                 .frame(height: 200)
-
-            Rectangle()
-                .fill(Color.random)
-                .frame(height: 200)
-                .matchedTransitionSource(id: id, in: animationNamespace)
                 .onTapGesture { tap in
                     selectedId = id
-                    withAnimation(.easeIn(duration: 3)) {
+                    tappedItemFrame = itemProxy.frame(in: .named("animation"))
+                    withAnimation(.easeIn(duration: 0.25)) {
                         showMonthList = true
                     }
                 }
         }
-        
-       
-     
+        .frame(height: 200)
     }
     
     @ViewBuilder
-    func monthView() -> some View {
-        Rectangle()
-            .fill(Color.yellow)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .opacity(showMonthList ? 1 : 0)
-            .overlay(content: {
-                Rectangle()
-                    .fill(.gray)
-                    .frame(height: 200)
-                    .matchedGeometryEffect(id: selectedId, in: animationNamespace)
-            })
-            .onTapGesture { tap in
-                withAnimation {
-                    showMonthList = false
+    func monthView(_ proxy: GeometryProxy) -> some View {
+        let parentFrame = proxy.frame(in: .named("animation"))
+        ZStack {
+            Color.blue
+                .ignoresSafeArea()
+                
+            Rectangle()
+                .fill(Color.yellow)
+                .frame(maxWidth: showMonthList ? .infinity : tappedItemFrame.width, maxHeight: showMonthList ? .infinity : tappedItemFrame.height)
+                .position(showMonthList ? CGPoint(x: parentFrame.midX, y:  parentFrame.height * 0.5) : CGPoint(x: tappedItemFrame.midX, y: tappedItemFrame.midY))
+                .overlay(content: {
+                    Rectangle()
+                        .fill(.gray)
+                        .frame(maxWidth: showMonthList ? .infinity : tappedItemFrame.width, maxHeight: showMonthList ? .infinity : tappedItemFrame.height)
+                        .frame(height: 200)
+                        .position(showMonthList ? CGPoint(x: parentFrame.midX, y:  parentFrame.height * 0.5) : CGPoint(x: tappedItemFrame.midX, y: tappedItemFrame.midY))
+                })
+                .onTapGesture { tap in
+                    withAnimation {
+                        showMonthList = false
+                    }
                 }
-            }
-            .navigationBarBackButtonHidden()
+        }.opacity(showMonthList ? 1 : 0)
+     
     }
 }
 
