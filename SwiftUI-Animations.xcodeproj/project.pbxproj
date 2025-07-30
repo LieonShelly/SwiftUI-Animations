@@ -6,6 +6,85 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F833189D2E3A0AAF00B3B2A0 /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833184E2E3A0AAF00B3B2A0 /* CalendarDay.swift */; };
+		F833189E2E3A0AAF00B3B2A0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833184F2E3A0AAF00B3B2A0 /* CalendarView.swift */; };
+		F833189F2E3A0AAF00B3B2A0 /* HeatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318502E3A0AAF00B3B2A0 /* HeatMapView.swift */; };
+		F83318A02E3A0AAF00B3B2A0 /* HeatMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318512E3A0AAF00B3B2A0 /* HeatMapViewModel.swift */; };
+		F83318A12E3A0AAF00B3B2A0 /* YearListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318522E3A0AAF00B3B2A0 /* YearListView.swift */; };
+		F83318A22E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318542E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift */; };
+		F83318A32E3A0AAF00B3B2A0 /* BrewInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318552E3A0AAF00B3B2A0 /* BrewInfoView.swift */; };
+		F83318A42E3A0AAF00B3B2A0 /* BrewTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318562E3A0AAF00B3B2A0 /* BrewTime.swift */; };
+		F83318A52E3A0AAF00B3B2A0 /* BrewTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318572E3A0AAF00B3B2A0 /* BrewTimer.swift */; };
+		F83318A62E3A0AAF00B3B2A0 /* CircledTextToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318582E3A0AAF00B3B2A0 /* CircledTextToggle.swift */; };
+		F83318A72E3A0AAF00B3B2A0 /* CountingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318592E3A0AAF00B3B2A0 /* CountingTimerView.swift */; };
+		F83318A82E3A0AAF00B3B2A0 /* EvaluationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833185A2E3A0AAF00B3B2A0 /* EvaluationListView.swift */; };
+		F83318A92E3A0AAF00B3B2A0 /* NumberTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833185B2E3A0AAF00B3B2A0 /* NumberTransitionView.swift */; };
+		F83318AA2E3A0AAF00B3B2A0 /* PolygonChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833185C2E3A0AAF00B3B2A0 /* PolygonChartView.swift */; };
+		F83318AB2E3A0AAF00B3B2A0 /* PopupSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833185D2E3A0AAF00B3B2A0 /* PopupSelectionButton.swift */; };
+		F83318AC2E3A0AAF00B3B2A0 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833185E2E3A0AAF00B3B2A0 /* ReviewView.swift */; };
+		F83318AD2E3A0AAF00B3B2A0 /* SlidingNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833185F2E3A0AAF00B3B2A0 /* SlidingNumber.swift */; };
+		F83318AE2E3A0AAF00B3B2A0 /* StaticRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318602E3A0AAF00B3B2A0 /* StaticRatingView.swift */; };
+		F83318AF2E3A0AAF00B3B2A0 /* TeaRatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318612E3A0AAF00B3B2A0 /* TeaRatingsView.swift */; };
+		F83318B02E3A0AAF00B3B2A0 /* TimerCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318622E3A0AAF00B3B2A0 /* TimerCompleteView.swift */; };
+		F83318B12E3A0AAF00B3B2A0 /* TimerDigitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318632E3A0AAF00B3B2A0 /* TimerDigitsView.swift */; };
+		F83318B22E3A0AAF00B3B2A0 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318642E3A0AAF00B3B2A0 /* TimerManager.swift */; };
+		F83318B32E3A0AAF00B3B2A0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318652E3A0AAF00B3B2A0 /* TimerView.swift */; };
+		F83318B42E3A0AAF00B3B2A0 /* LoopingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318672E3A0AAF00B3B2A0 /* LoopingStack.swift */; };
+		F83318B52E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318682E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift */; };
+		F83318B62E3A0AAF00B3B2A0 /* ArcTribune.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833186A2E3A0AAF00B3B2A0 /* ArcTribune.swift */; };
+		F83318B72E3A0AAF00B3B2A0 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833186B2E3A0AAF00B3B2A0 /* Field.swift */; };
+		F83318B82E3A0AAF00B3B2A0 /* LinkedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833186C2E3A0AAF00B3B2A0 /* LinkedAnimation.swift */; };
+		F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833186D2E3A0AAF00B3B2A0 /* RectTribune.swift */; };
+		F83318BA2E3A0AAF00B3B2A0 /* SeatingChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833186E2E3A0AAF00B3B2A0 /* SeatingChartView.swift */; };
+		F83318BB2E3A0AAF00B3B2A0 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833186F2E3A0AAF00B3B2A0 /* Sector.swift */; };
+		F83318BC2E3A0AAF00B3B2A0 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318702E3A0AAF00B3B2A0 /* Stadium.swift */; };
+		F83318BD2E3A0AAF00B3B2A0 /* Tribune.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318712E3A0AAF00B3B2A0 /* Tribune.swift */; };
+		F83318BE2E3A0AAF00B3B2A0 /* PourAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318742E3A0AAF00B3B2A0 /* PourAnimationView.swift */; };
+		F83318BF2E3A0AAF00B3B2A0 /* PourSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318762E3A0AAF00B3B2A0 /* PourSceneView.swift */; };
+		F83318C02E3A0AAF00B3B2A0 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318772E3A0AAF00B3B2A0 /* RatingView.swift */; };
+		F83318C12E3A0AAF00B3B2A0 /* WaveShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318782E3A0AAF00B3B2A0 /* WaveShape.swift */; };
+		F83318C22E3A0AAF00B3B2A0 /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833187A2E3A0AAF00B3B2A0 /* BallView.swift */; };
+		F83318C32E3A0AAF00B3B2A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833187B2E3A0AAF00B3B2A0 /* Constants.swift */; };
+		F83318C42E3A0AAF00B3B2A0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833187C2E3A0AAF00B3B2A0 /* Event.swift */; };
+		F83318C52E3A0AAF00B3B2A0 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833187D2E3A0AAF00B3B2A0 /* EventView.swift */; };
+		F83318C62E3A0AAF00B3B2A0 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833187E2E3A0AAF00B3B2A0 /* MockData.swift */; };
+		F83318C72E3A0AAF00B3B2A0 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318802E3A0AAF00B3B2A0 /* PullToRefresh.swift */; };
+		F83318C82E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318812E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift */; };
+		F83318C92E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318822E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift */; };
+		F83318CA2E3A0AAF00B3B2A0 /* SportTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318832E3A0AAF00B3B2A0 /* SportTicketView.swift */; };
+		F83318CB2E3A0AAF00B3B2A0 /* CategoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318852E3A0AAF00B3B2A0 /* CategoryContentView.swift */; };
+		F83318CC2E3A0AAF00B3B2A0 /* PagingSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318862E3A0AAF00B3B2A0 /* PagingSegmentView.swift */; };
+		F83318CD2E3A0AAF00B3B2A0 /* SkeletonSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318892E3A0AAF00B3B2A0 /* SkeletonSampleView.swift */; };
+		F83318CE2E3A0AAF00B3B2A0 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833188A2E3A0AAF00B3B2A0 /* SkeletonView.swift */; };
+		F83318CF2E3A0AAF00B3B2A0 /* AnalogTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833188D2E3A0AAF00B3B2A0 /* AnalogTimerView.swift */; };
+		F83318D02E3A0AAF00B3B2A0 /* TimerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833188E2E3A0AAF00B3B2A0 /* TimerControlView.swift */; };
+		F83318D12E3A0AAF00B3B2A0 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318902E3A0AAF00B3B2A0 /* EventDetailsView.swift */; };
+		F83318D22E3A0AAF00B3B2A0 /* EventLocationAndDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318912E3A0AAF00B3B2A0 /* EventLocationAndDate.swift */; };
+		F83318D32E3A0AAF00B3B2A0 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318922E3A0AAF00B3B2A0 /* FilterView.swift */; };
+		F83318D42E3A0AAF00B3B2A0 /* HeaderGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318932E3A0AAF00B3B2A0 /* HeaderGeometryReader.swift */; };
+		F83318D52E3A0AAF00B3B2A0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318942E3A0AAF00B3B2A0 /* HeaderView.swift */; };
+		F83318D62E3A0AAF00B3B2A0 /* SeatsSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318952E3A0AAF00B3B2A0 /* SeatsSelectionView.swift */; };
+		F83318D72E3A0AAF00B3B2A0 /* TicketsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318962E3A0AAF00B3B2A0 /* TicketsInfo.swift */; };
+		F83318D82E3A0AAF00B3B2A0 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318972E3A0AAF00B3B2A0 /* TicketView.swift */; };
+		F83318D92E3A0AAF00B3B2A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833189A2E3A0AAF00B3B2A0 /* ContentView.swift */; };
+		F83318DA2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833189B2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift */; };
+		F83318DB2E3A0AAF00B3B2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83318732E3A0AAF00B3B2A0 /* Assets.xcassets */; };
+		F83318DC2E3A0AAF00B3B2A0 /* PourParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = F83318752E3A0AAF00B3B2A0 /* PourParticle.sks */; };
+		F83318DD2E3A0AAF00B3B2A0 /* PullToRefresh.md in Resources */ = {isa = PBXBuildFile; fileRef = F833187F2E3A0AAF00B3B2A0 /* PullToRefresh.md */; };
+		F83318DE2E3A0AAF00B3B2A0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F83318882E3A0AAF00B3B2A0 /* README.md */; };
+		F83318DF2E3A0AAF00B3B2A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F83318992E3A0AAF00B3B2A0 /* Assets.xcassets */; };
+		F83318E22E3A0C8A00B3B2A0 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318E12E3A0C8A00B3B2A0 /* Topic.swift */; };
+		F83318E42E3A0C8E00B3B2A0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318E32E3A0C8E00B3B2A0 /* Post.swift */; };
+		F83318E82E3A0D5F00B3B2A0 /* SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318E72E3A0D5F00B3B2A0 /* SafeArea.swift */; };
+		F83318EA2E3A0D9A00B3B2A0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318E92E3A0D9A00B3B2A0 /* HomeViewModel.swift */; };
+		F83318EC2E3A12BE00B3B2A0 /* FeedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318EB2E3A12BE00B3B2A0 /* FeedContentView.swift */; };
+		F83318EE2E3A146D00B3B2A0 /* PostsFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318ED2E3A146D00B3B2A0 /* PostsFeedView.swift */; };
+		F83318F02E3A14F500B3B2A0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */; };
+		F83318F22E3A16B600B3B2A0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F12E3A16B600B3B2A0 /* HomeView.swift */; };
+		F83318F42E3A16BC00B3B2A0 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F868FA1B2E0A895700C2D83B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,17 +103,88 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F833184E2E3A0AAF00B3B2A0 /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
+		F833184F2E3A0AAF00B3B2A0 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F83318502E3A0AAF00B3B2A0 /* HeatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapView.swift; sourceTree = "<group>"; };
+		F83318512E3A0AAF00B3B2A0 /* HeatMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapViewModel.swift; sourceTree = "<group>"; };
+		F83318522E3A0AAF00B3B2A0 /* YearListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearListView.swift; sourceTree = "<group>"; };
+		F83318542E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedRadarChart.swift; sourceTree = "<group>"; };
+		F83318552E3A0AAF00B3B2A0 /* BrewInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewInfoView.swift; sourceTree = "<group>"; };
+		F83318562E3A0AAF00B3B2A0 /* BrewTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTime.swift; sourceTree = "<group>"; };
+		F83318572E3A0AAF00B3B2A0 /* BrewTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrewTimer.swift; sourceTree = "<group>"; };
+		F83318582E3A0AAF00B3B2A0 /* CircledTextToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircledTextToggle.swift; sourceTree = "<group>"; };
+		F83318592E3A0AAF00B3B2A0 /* CountingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingTimerView.swift; sourceTree = "<group>"; };
+		F833185A2E3A0AAF00B3B2A0 /* EvaluationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluationListView.swift; sourceTree = "<group>"; };
+		F833185B2E3A0AAF00B3B2A0 /* NumberTransitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTransitionView.swift; sourceTree = "<group>"; };
+		F833185C2E3A0AAF00B3B2A0 /* PolygonChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonChartView.swift; sourceTree = "<group>"; };
+		F833185D2E3A0AAF00B3B2A0 /* PopupSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSelectionButton.swift; sourceTree = "<group>"; };
+		F833185E2E3A0AAF00B3B2A0 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		F833185F2E3A0AAF00B3B2A0 /* SlidingNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingNumber.swift; sourceTree = "<group>"; };
+		F83318602E3A0AAF00B3B2A0 /* StaticRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticRatingView.swift; sourceTree = "<group>"; };
+		F83318612E3A0AAF00B3B2A0 /* TeaRatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaRatingsView.swift; sourceTree = "<group>"; };
+		F83318622E3A0AAF00B3B2A0 /* TimerCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCompleteView.swift; sourceTree = "<group>"; };
+		F83318632E3A0AAF00B3B2A0 /* TimerDigitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDigitsView.swift; sourceTree = "<group>"; };
+		F83318642E3A0AAF00B3B2A0 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		F83318652E3A0AAF00B3B2A0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		F83318672E3A0AAF00B3B2A0 /* LoopingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingStack.swift; sourceTree = "<group>"; };
+		F83318682E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingStackExampleView.swift; sourceTree = "<group>"; };
+		F833186A2E3A0AAF00B3B2A0 /* ArcTribune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcTribune.swift; sourceTree = "<group>"; };
+		F833186B2E3A0AAF00B3B2A0 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		F833186C2E3A0AAF00B3B2A0 /* LinkedAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedAnimation.swift; sourceTree = "<group>"; };
+		F833186D2E3A0AAF00B3B2A0 /* RectTribune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectTribune.swift; sourceTree = "<group>"; };
+		F833186E2E3A0AAF00B3B2A0 /* SeatingChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatingChartView.swift; sourceTree = "<group>"; };
+		F833186F2E3A0AAF00B3B2A0 /* Sector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
+		F83318702E3A0AAF00B3B2A0 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
+		F83318712E3A0AAF00B3B2A0 /* Tribune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tribune.swift; sourceTree = "<group>"; };
+		F83318732E3A0AAF00B3B2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F83318742E3A0AAF00B3B2A0 /* PourAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PourAnimationView.swift; sourceTree = "<group>"; };
+		F83318752E3A0AAF00B3B2A0 /* PourParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PourParticle.sks; sourceTree = "<group>"; };
+		F83318762E3A0AAF00B3B2A0 /* PourSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PourSceneView.swift; sourceTree = "<group>"; };
+		F83318772E3A0AAF00B3B2A0 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		F83318782E3A0AAF00B3B2A0 /* WaveShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveShape.swift; sourceTree = "<group>"; };
+		F833187A2E3A0AAF00B3B2A0 /* BallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
+		F833187B2E3A0AAF00B3B2A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F833187C2E3A0AAF00B3B2A0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F833187D2E3A0AAF00B3B2A0 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		F833187E2E3A0AAF00B3B2A0 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		F833187F2E3A0AAF00B3B2A0 /* PullToRefresh.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PullToRefresh.md; sourceTree = "<group>"; };
+		F83318802E3A0AAF00B3B2A0 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		F83318812E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshSampleView.swift; sourceTree = "<group>"; };
+		F83318822E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewGeometryReader.swift; sourceTree = "<group>"; };
+		F83318832E3A0AAF00B3B2A0 /* SportTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTicketView.swift; sourceTree = "<group>"; };
+		F83318852E3A0AAF00B3B2A0 /* CategoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContentView.swift; sourceTree = "<group>"; };
+		F83318862E3A0AAF00B3B2A0 /* PagingSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingSegmentView.swift; sourceTree = "<group>"; };
+		F83318882E3A0AAF00B3B2A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F83318892E3A0AAF00B3B2A0 /* SkeletonSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonSampleView.swift; sourceTree = "<group>"; };
+		F833188A2E3A0AAF00B3B2A0 /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		F833188D2E3A0AAF00B3B2A0 /* AnalogTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogTimerView.swift; sourceTree = "<group>"; };
+		F833188E2E3A0AAF00B3B2A0 /* TimerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerControlView.swift; sourceTree = "<group>"; };
+		F83318902E3A0AAF00B3B2A0 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
+		F83318912E3A0AAF00B3B2A0 /* EventLocationAndDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLocationAndDate.swift; sourceTree = "<group>"; };
+		F83318922E3A0AAF00B3B2A0 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		F83318932E3A0AAF00B3B2A0 /* HeaderGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderGeometryReader.swift; sourceTree = "<group>"; };
+		F83318942E3A0AAF00B3B2A0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F83318952E3A0AAF00B3B2A0 /* SeatsSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsSelectionView.swift; sourceTree = "<group>"; };
+		F83318962E3A0AAF00B3B2A0 /* TicketsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsInfo.swift; sourceTree = "<group>"; };
+		F83318972E3A0AAF00B3B2A0 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		F83318992E3A0AAF00B3B2A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F833189A2E3A0AAF00B3B2A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F833189B2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AnimationsApp.swift; sourceTree = "<group>"; };
+		F83318E12E3A0C8A00B3B2A0 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		F83318E32E3A0C8E00B3B2A0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F83318E72E3A0D5F00B3B2A0 /* SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeArea.swift; sourceTree = "<group>"; };
+		F83318E92E3A0D9A00B3B2A0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F83318EB2E3A12BE00B3B2A0 /* FeedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContentView.swift; sourceTree = "<group>"; };
+		F83318ED2E3A146D00B3B2A0 /* PostsFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsFeedView.swift; sourceTree = "<group>"; };
+		F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F83318F12E3A16B600B3B2A0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F868FA0F2E0A895500C2D83B /* SwiftUI-Animations */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SwiftUI-Animations";
-			sourceTree = "<group>";
-		};
 		F868FA1D2E0A895700C2D83B /* SwiftUI-AnimationsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "SwiftUI-AnimationsTests";
@@ -72,10 +222,205 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F83318532E3A0AAF00B3B2A0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F833184E2E3A0AAF00B3B2A0 /* CalendarDay.swift */,
+				F833184F2E3A0AAF00B3B2A0 /* CalendarView.swift */,
+				F83318502E3A0AAF00B3B2A0 /* HeatMapView.swift */,
+				F83318512E3A0AAF00B3B2A0 /* HeatMapViewModel.swift */,
+				F83318522E3A0AAF00B3B2A0 /* YearListView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		F83318662E3A0AAF00B3B2A0 /* CustomAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F83318542E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift */,
+				F83318552E3A0AAF00B3B2A0 /* BrewInfoView.swift */,
+				F83318562E3A0AAF00B3B2A0 /* BrewTime.swift */,
+				F83318572E3A0AAF00B3B2A0 /* BrewTimer.swift */,
+				F83318582E3A0AAF00B3B2A0 /* CircledTextToggle.swift */,
+				F83318592E3A0AAF00B3B2A0 /* CountingTimerView.swift */,
+				F833185A2E3A0AAF00B3B2A0 /* EvaluationListView.swift */,
+				F833185B2E3A0AAF00B3B2A0 /* NumberTransitionView.swift */,
+				F833185C2E3A0AAF00B3B2A0 /* PolygonChartView.swift */,
+				F833185D2E3A0AAF00B3B2A0 /* PopupSelectionButton.swift */,
+				F833185E2E3A0AAF00B3B2A0 /* ReviewView.swift */,
+				F833185F2E3A0AAF00B3B2A0 /* SlidingNumber.swift */,
+				F83318602E3A0AAF00B3B2A0 /* StaticRatingView.swift */,
+				F83318612E3A0AAF00B3B2A0 /* TeaRatingsView.swift */,
+				F83318622E3A0AAF00B3B2A0 /* TimerCompleteView.swift */,
+				F83318632E3A0AAF00B3B2A0 /* TimerDigitsView.swift */,
+				F83318642E3A0AAF00B3B2A0 /* TimerManager.swift */,
+				F83318652E3A0AAF00B3B2A0 /* TimerView.swift */,
+			);
+			path = CustomAnimation;
+			sourceTree = "<group>";
+		};
+		F83318692E3A0AAF00B3B2A0 /* LoopingStack */ = {
+			isa = PBXGroup;
+			children = (
+				F83318672E3A0AAF00B3B2A0 /* LoopingStack.swift */,
+				F83318682E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift */,
+			);
+			path = LoopingStack;
+			sourceTree = "<group>";
+		};
+		F83318722E3A0AAF00B3B2A0 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				F833186A2E3A0AAF00B3B2A0 /* ArcTribune.swift */,
+				F833186B2E3A0AAF00B3B2A0 /* Field.swift */,
+				F833186C2E3A0AAF00B3B2A0 /* LinkedAnimation.swift */,
+				F833186D2E3A0AAF00B3B2A0 /* RectTribune.swift */,
+				F833186E2E3A0AAF00B3B2A0 /* SeatingChartView.swift */,
+				F833186F2E3A0AAF00B3B2A0 /* Sector.swift */,
+				F83318702E3A0AAF00B3B2A0 /* Stadium.swift */,
+				F83318712E3A0AAF00B3B2A0 /* Tribune.swift */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		F83318792E3A0AAF00B3B2A0 /* PourAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F83318732E3A0AAF00B3B2A0 /* Assets.xcassets */,
+				F83318742E3A0AAF00B3B2A0 /* PourAnimationView.swift */,
+				F83318752E3A0AAF00B3B2A0 /* PourParticle.sks */,
+				F83318762E3A0AAF00B3B2A0 /* PourSceneView.swift */,
+				F83318772E3A0AAF00B3B2A0 /* RatingView.swift */,
+				F83318782E3A0AAF00B3B2A0 /* WaveShape.swift */,
+			);
+			path = PourAnimation;
+			sourceTree = "<group>";
+		};
+		F83318842E3A0AAF00B3B2A0 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F833187A2E3A0AAF00B3B2A0 /* BallView.swift */,
+				F833187B2E3A0AAF00B3B2A0 /* Constants.swift */,
+				F833187C2E3A0AAF00B3B2A0 /* Event.swift */,
+				F833187D2E3A0AAF00B3B2A0 /* EventView.swift */,
+				F833187E2E3A0AAF00B3B2A0 /* MockData.swift */,
+				F833187F2E3A0AAF00B3B2A0 /* PullToRefresh.md */,
+				F83318802E3A0AAF00B3B2A0 /* PullToRefresh.swift */,
+				F83318812E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift */,
+				F83318822E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift */,
+				F83318832E3A0AAF00B3B2A0 /* SportTicketView.swift */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		F83318872E3A0AAF00B3B2A0 /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				F83318852E3A0AAF00B3B2A0 /* CategoryContentView.swift */,
+				F83318862E3A0AAF00B3B2A0 /* PagingSegmentView.swift */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		F833188B2E3A0AAF00B3B2A0 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				F83318882E3A0AAF00B3B2A0 /* README.md */,
+				F83318892E3A0AAF00B3B2A0 /* SkeletonSampleView.swift */,
+				F833188A2E3A0AAF00B3B2A0 /* SkeletonView.swift */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		F833188C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SwiftUI-Animations";
+			sourceTree = "<group>";
+		};
+		F833188F2E3A0AAF00B3B2A0 /* TimeBasedAniamtions */ = {
+			isa = PBXGroup;
+			children = (
+				F833188D2E3A0AAF00B3B2A0 /* AnalogTimerView.swift */,
+				F833188E2E3A0AAF00B3B2A0 /* TimerControlView.swift */,
+			);
+			path = TimeBasedAniamtions;
+			sourceTree = "<group>";
+		};
+		F83318982E3A0AAF00B3B2A0 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				F83318902E3A0AAF00B3B2A0 /* EventDetailsView.swift */,
+				F83318912E3A0AAF00B3B2A0 /* EventLocationAndDate.swift */,
+				F83318922E3A0AAF00B3B2A0 /* FilterView.swift */,
+				F83318932E3A0AAF00B3B2A0 /* HeaderGeometryReader.swift */,
+				F83318942E3A0AAF00B3B2A0 /* HeaderView.swift */,
+				F83318952E3A0AAF00B3B2A0 /* SeatsSelectionView.swift */,
+				F83318962E3A0AAF00B3B2A0 /* TicketsInfo.swift */,
+				F83318972E3A0AAF00B3B2A0 /* TicketView.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F83318E02E3A0AB400B3B2A0 /* SegmentTab */,
+				F83318532E3A0AAF00B3B2A0 /* Calendar */,
+				F83318662E3A0AAF00B3B2A0 /* CustomAnimation */,
+				F83318692E3A0AAF00B3B2A0 /* LoopingStack */,
+				F83318722E3A0AAF00B3B2A0 /* Path */,
+				F83318792E3A0AAF00B3B2A0 /* PourAnimation */,
+				F83318842E3A0AAF00B3B2A0 /* PullToRefresh */,
+				F83318872E3A0AAF00B3B2A0 /* Segment */,
+				F833188B2E3A0AAF00B3B2A0 /* Skeleton */,
+				F833188C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */,
+				F833188F2E3A0AAF00B3B2A0 /* TimeBasedAniamtions */,
+				F83318982E3A0AAF00B3B2A0 /* Transition */,
+				F83318992E3A0AAF00B3B2A0 /* Assets.xcassets */,
+				F833189A2E3A0AAF00B3B2A0 /* ContentView.swift */,
+				F833189B2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift */,
+			);
+			path = "SwiftUI-Animations";
+			sourceTree = "<group>";
+		};
+		F83318E02E3A0AB400B3B2A0 /* SegmentTab */ = {
+			isa = PBXGroup;
+			children = (
+				F83318E62E3A0CA500B3B2A0 /* View */,
+				F83318E52E3A0C9200B3B2A0 /* Model */,
+			);
+			path = SegmentTab;
+			sourceTree = "<group>";
+		};
+		F83318E52E3A0C9200B3B2A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F83318E92E3A0D9A00B3B2A0 /* HomeViewModel.swift */,
+				F83318E72E3A0D5F00B3B2A0 /* SafeArea.swift */,
+				F83318E32E3A0C8E00B3B2A0 /* Post.swift */,
+				F83318E12E3A0C8A00B3B2A0 /* Topic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F83318E62E3A0CA500B3B2A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */,
+				F83318F12E3A16B600B3B2A0 /* HomeView.swift */,
+				F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */,
+				F83318ED2E3A146D00B3B2A0 /* PostsFeedView.swift */,
+				F83318EB2E3A12BE00B3B2A0 /* FeedContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F868FA042E0A895500C2D83B = {
 			isa = PBXGroup;
 			children = (
-				F868FA0F2E0A895500C2D83B /* SwiftUI-Animations */,
+				F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */,
 				F868FA1D2E0A895700C2D83B /* SwiftUI-AnimationsTests */,
 				F868FA272E0A895700C2D83B /* SwiftUI-AnimationsUITests */,
 				F868FA0E2E0A895500C2D83B /* Products */,
@@ -106,9 +451,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F868FA0F2E0A895500C2D83B /* SwiftUI-Animations */,
 			);
 			name = "SwiftUI-Animations";
 			packageProductDependencies = (
@@ -212,6 +554,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83318DB2E3A0AAF00B3B2A0 /* Assets.xcassets in Resources */,
+				F83318DC2E3A0AAF00B3B2A0 /* PourParticle.sks in Resources */,
+				F83318DD2E3A0AAF00B3B2A0 /* PullToRefresh.md in Resources */,
+				F83318DE2E3A0AAF00B3B2A0 /* README.md in Resources */,
+				F83318DF2E3A0AAF00B3B2A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +583,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F833189D2E3A0AAF00B3B2A0 /* CalendarDay.swift in Sources */,
+				F83318EA2E3A0D9A00B3B2A0 /* HomeViewModel.swift in Sources */,
+				F833189E2E3A0AAF00B3B2A0 /* CalendarView.swift in Sources */,
+				F833189F2E3A0AAF00B3B2A0 /* HeatMapView.swift in Sources */,
+				F83318A02E3A0AAF00B3B2A0 /* HeatMapViewModel.swift in Sources */,
+				F83318A12E3A0AAF00B3B2A0 /* YearListView.swift in Sources */,
+				F83318A22E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift in Sources */,
+				F83318A32E3A0AAF00B3B2A0 /* BrewInfoView.swift in Sources */,
+				F83318A42E3A0AAF00B3B2A0 /* BrewTime.swift in Sources */,
+				F83318A52E3A0AAF00B3B2A0 /* BrewTimer.swift in Sources */,
+				F83318A62E3A0AAF00B3B2A0 /* CircledTextToggle.swift in Sources */,
+				F83318A72E3A0AAF00B3B2A0 /* CountingTimerView.swift in Sources */,
+				F83318E42E3A0C8E00B3B2A0 /* Post.swift in Sources */,
+				F83318A82E3A0AAF00B3B2A0 /* EvaluationListView.swift in Sources */,
+				F83318A92E3A0AAF00B3B2A0 /* NumberTransitionView.swift in Sources */,
+				F83318F42E3A16BC00B3B2A0 /* TabBarView.swift in Sources */,
+				F83318E82E3A0D5F00B3B2A0 /* SafeArea.swift in Sources */,
+				F83318AA2E3A0AAF00B3B2A0 /* PolygonChartView.swift in Sources */,
+				F83318AB2E3A0AAF00B3B2A0 /* PopupSelectionButton.swift in Sources */,
+				F83318AC2E3A0AAF00B3B2A0 /* ReviewView.swift in Sources */,
+				F83318AD2E3A0AAF00B3B2A0 /* SlidingNumber.swift in Sources */,
+				F83318AE2E3A0AAF00B3B2A0 /* StaticRatingView.swift in Sources */,
+				F83318AF2E3A0AAF00B3B2A0 /* TeaRatingsView.swift in Sources */,
+				F83318B02E3A0AAF00B3B2A0 /* TimerCompleteView.swift in Sources */,
+				F83318B12E3A0AAF00B3B2A0 /* TimerDigitsView.swift in Sources */,
+				F83318B22E3A0AAF00B3B2A0 /* TimerManager.swift in Sources */,
+				F83318B32E3A0AAF00B3B2A0 /* TimerView.swift in Sources */,
+				F83318B42E3A0AAF00B3B2A0 /* LoopingStack.swift in Sources */,
+				F83318B52E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift in Sources */,
+				F83318B62E3A0AAF00B3B2A0 /* ArcTribune.swift in Sources */,
+				F83318B72E3A0AAF00B3B2A0 /* Field.swift in Sources */,
+				F83318EE2E3A146D00B3B2A0 /* PostsFeedView.swift in Sources */,
+				F83318B82E3A0AAF00B3B2A0 /* LinkedAnimation.swift in Sources */,
+				F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */,
+				F83318BA2E3A0AAF00B3B2A0 /* SeatingChartView.swift in Sources */,
+				F83318BB2E3A0AAF00B3B2A0 /* Sector.swift in Sources */,
+				F83318BC2E3A0AAF00B3B2A0 /* Stadium.swift in Sources */,
+				F83318BD2E3A0AAF00B3B2A0 /* Tribune.swift in Sources */,
+				F83318BE2E3A0AAF00B3B2A0 /* PourAnimationView.swift in Sources */,
+				F83318BF2E3A0AAF00B3B2A0 /* PourSceneView.swift in Sources */,
+				F83318C02E3A0AAF00B3B2A0 /* RatingView.swift in Sources */,
+				F83318C12E3A0AAF00B3B2A0 /* WaveShape.swift in Sources */,
+				F83318C22E3A0AAF00B3B2A0 /* BallView.swift in Sources */,
+				F83318C32E3A0AAF00B3B2A0 /* Constants.swift in Sources */,
+				F83318F22E3A16B600B3B2A0 /* HomeView.swift in Sources */,
+				F83318C42E3A0AAF00B3B2A0 /* Event.swift in Sources */,
+				F83318C52E3A0AAF00B3B2A0 /* EventView.swift in Sources */,
+				F83318C62E3A0AAF00B3B2A0 /* MockData.swift in Sources */,
+				F83318C72E3A0AAF00B3B2A0 /* PullToRefresh.swift in Sources */,
+				F83318C82E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift in Sources */,
+				F83318C92E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift in Sources */,
+				F83318CA2E3A0AAF00B3B2A0 /* SportTicketView.swift in Sources */,
+				F83318CB2E3A0AAF00B3B2A0 /* CategoryContentView.swift in Sources */,
+				F83318CC2E3A0AAF00B3B2A0 /* PagingSegmentView.swift in Sources */,
+				F83318F02E3A14F500B3B2A0 /* ColorExtension.swift in Sources */,
+				F83318CD2E3A0AAF00B3B2A0 /* SkeletonSampleView.swift in Sources */,
+				F83318CE2E3A0AAF00B3B2A0 /* SkeletonView.swift in Sources */,
+				F83318CF2E3A0AAF00B3B2A0 /* AnalogTimerView.swift in Sources */,
+				F83318D02E3A0AAF00B3B2A0 /* TimerControlView.swift in Sources */,
+				F83318D12E3A0AAF00B3B2A0 /* EventDetailsView.swift in Sources */,
+				F83318D22E3A0AAF00B3B2A0 /* EventLocationAndDate.swift in Sources */,
+				F83318D32E3A0AAF00B3B2A0 /* FilterView.swift in Sources */,
+				F83318E22E3A0C8A00B3B2A0 /* Topic.swift in Sources */,
+				F83318D42E3A0AAF00B3B2A0 /* HeaderGeometryReader.swift in Sources */,
+				F83318EC2E3A12BE00B3B2A0 /* FeedContentView.swift in Sources */,
+				F83318D52E3A0AAF00B3B2A0 /* HeaderView.swift in Sources */,
+				F83318D62E3A0AAF00B3B2A0 /* SeatsSelectionView.swift in Sources */,
+				F83318D72E3A0AAF00B3B2A0 /* TicketsInfo.swift in Sources */,
+				F83318D82E3A0AAF00B3B2A0 /* TicketView.swift in Sources */,
+				F83318D92E3A0AAF00B3B2A0 /* ContentView.swift in Sources */,
+				F83318DA2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
