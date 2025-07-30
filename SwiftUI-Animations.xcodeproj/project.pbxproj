@@ -83,6 +83,7 @@
 		F83318F02E3A14F500B3B2A0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */; };
 		F83318F22E3A16B600B3B2A0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F12E3A16B600B3B2A0 /* HomeView.swift */; };
 		F83318F42E3A16BC00B3B2A0 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */; };
+		F83318F62E3A2B6000B3B2A0 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +180,7 @@
 		F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F83318F12E3A16B600B3B2A0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,6 +410,7 @@
 		F83318E62E3A0CA500B3B2A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */,
 				F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */,
 				F83318F12E3A16B600B3B2A0 /* HomeView.swift */,
 				F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */,
@@ -588,6 +591,7 @@
 				F833189E2E3A0AAF00B3B2A0 /* CalendarView.swift in Sources */,
 				F833189F2E3A0AAF00B3B2A0 /* HeatMapView.swift in Sources */,
 				F83318A02E3A0AAF00B3B2A0 /* HeatMapViewModel.swift in Sources */,
+				F83318F62E3A2B6000B3B2A0 /* TabBarItemView.swift in Sources */,
 				F83318A12E3A0AAF00B3B2A0 /* YearListView.swift in Sources */,
 				F83318A22E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift in Sources */,
 				F83318A32E3A0AAF00B3B2A0 /* BrewInfoView.swift in Sources */,
