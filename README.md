@@ -7,4 +7,4 @@
 | [下拉刷新](SwiftUI-Animations/PullToRefresh)    | ![refresh](Resouces/refresh.gif)  | [日历视图](SwiftUI-Animations/Calendar) | ![calendar](Resouces/calendar.gif) |
 | [卡包视图](SwiftUI-Animations/LoopingStack)    | ![card](Resouces/loop_stack.gif)  | [分类Tab](SwiftUI-Animations/SegmentTab) | ![segment](Resouces/segment_tab.gif) |
 
-| [骨架图](SwiftUI-Animations/Skeleton)    | ![skeleton](Resouces/skeleton.gif)  | -| - |
+| [骨架图](SwiftUI-Animations/Skeleton)    | ![skeleton](Resouces/skeleton.gif)  | - | - |
