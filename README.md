@@ -1,5 +1,5 @@
 # SwiftUI-Animations
-- [Animation](AnimationREADME.md)
+- [SwiftUI动画学习笔记](AnimationREADME.md)
 
 # 用SwiftUI实现常用的控件
 - [日历视图](SwiftUI-Animations/Calendar)
