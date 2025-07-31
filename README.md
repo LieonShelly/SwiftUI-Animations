@@ -326,6 +326,6 @@ SwiftUI 动画以其声明式和组合性，极大简化了动画开发。通过
 - [卡包视图](SwiftUI-Animations/LoopingStack)
     - ![card](Resouces/loop_stack.gif)
 - [分类Tab](SwiftUI-Animations/SegmentTab)
-    - [segment](Resouces/segment_tab.gif)
+    - ![segment](Resouces/segment_tab.gif)
 - [骨架图](SwiftUI-Animations/Skeleton)
-    - [skeleton](Resouces/skeleton.gif)
+    - ![skeleton](Resouces/skeleton.gif)
