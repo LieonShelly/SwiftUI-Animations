@@ -53,8 +53,6 @@
 		F83318C82E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318812E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift */; };
 		F83318C92E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318822E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift */; };
 		F83318CA2E3A0AAF00B3B2A0 /* SportTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318832E3A0AAF00B3B2A0 /* SportTicketView.swift */; };
-		F83318CB2E3A0AAF00B3B2A0 /* CategoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318852E3A0AAF00B3B2A0 /* CategoryContentView.swift */; };
-		F83318CC2E3A0AAF00B3B2A0 /* PagingSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318862E3A0AAF00B3B2A0 /* PagingSegmentView.swift */; };
 		F83318CD2E3A0AAF00B3B2A0 /* SkeletonSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318892E3A0AAF00B3B2A0 /* SkeletonSampleView.swift */; };
 		F83318CE2E3A0AAF00B3B2A0 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833188A2E3A0AAF00B3B2A0 /* SkeletonView.swift */; };
 		F83318CF2E3A0AAF00B3B2A0 /* AnalogTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833188D2E3A0AAF00B3B2A0 /* AnalogTimerView.swift */; };
@@ -158,8 +156,6 @@
 		F83318812E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshSampleView.swift; sourceTree = "<group>"; };
 		F83318822E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewGeometryReader.swift; sourceTree = "<group>"; };
 		F83318832E3A0AAF00B3B2A0 /* SportTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTicketView.swift; sourceTree = "<group>"; };
-		F83318852E3A0AAF00B3B2A0 /* CategoryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContentView.swift; sourceTree = "<group>"; };
-		F83318862E3A0AAF00B3B2A0 /* PagingSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingSegmentView.swift; sourceTree = "<group>"; };
 		F83318882E3A0AAF00B3B2A0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F83318892E3A0AAF00B3B2A0 /* SkeletonSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonSampleView.swift; sourceTree = "<group>"; };
 		F833188A2E3A0AAF00B3B2A0 /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
@@ -347,15 +343,6 @@
 			path = PullToRefresh;
 			sourceTree = "<group>";
 		};
-		F83318872E3A0AAF00B3B2A0 /* Segment */ = {
-			isa = PBXGroup;
-			children = (
-				F83318852E3A0AAF00B3B2A0 /* CategoryContentView.swift */,
-				F83318862E3A0AAF00B3B2A0 /* PagingSegmentView.swift */,
-			);
-			path = Segment;
-			sourceTree = "<group>";
-		};
 		F833188B2E3A0AAF00B3B2A0 /* Skeleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,7 +395,6 @@
 				F83318722E3A0AAF00B3B2A0 /* Path */,
 				F83318792E3A0AAF00B3B2A0 /* PourAnimation */,
 				F83318842E3A0AAF00B3B2A0 /* PullToRefresh */,
-				F83318872E3A0AAF00B3B2A0 /* Segment */,
 				F833188B2E3A0AAF00B3B2A0 /* Skeleton */,
 				F833188C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */,
 				F833188F2E3A0AAF00B3B2A0 /* TimeBasedAniamtions */,
@@ -672,8 +658,6 @@
 				F83318C82E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift in Sources */,
 				F83318C92E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift in Sources */,
 				F83318CA2E3A0AAF00B3B2A0 /* SportTicketView.swift in Sources */,
-				F83318CB2E3A0AAF00B3B2A0 /* CategoryContentView.swift in Sources */,
-				F83318CC2E3A0AAF00B3B2A0 /* PagingSegmentView.swift in Sources */,
 				F83318F02E3A14F500B3B2A0 /* ColorExtension.swift in Sources */,
 				F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */,
 				F83318CD2E3A0AAF00B3B2A0 /* SkeletonSampleView.swift in Sources */,
