@@ -62,36 +62,6 @@ extension HomeViewModel {
             ]),
             .init(id: 4, name: "aww", color: "#4A7B9D", posts: [
                 .init(id: "4", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 5, name: "A44", color: "#4A7B9D", posts: [
-                .init(id: "5", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 6, name: "A423", color: "#4A7B9D", posts: [
-                .init(id: "6", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 7, name: "A23422", color: "#4A7B9D", posts: [
-                .init(id: "7", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 8, name: "sfsdA", color: "#4A7B9D", posts: [
-                .init(id: "8", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 9, name: "Aasdf", color: "#4A7B9D", posts: [
-                .init(id: "9", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 10, name: "Aasdf", color: "#4A7B9D", posts: [
-                .init(id: "10", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 11, name: "Aasdf", color: "#4A7B9D", posts: [
-                .init(id: "011", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 12, name: "Aasfasdf", color: "#4A7B9D", posts: [
-                .init(id: "012", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 13, name: "Aasdf", color: "#4A7B9D", posts: [
-                .init(id: "013", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
-            ]),
-            .init(id: 14, name: "Aasdf", color: "#4A7B9D", posts: [
-                .init(id: "014", name: "Name", likes: 234, content: "New climate agreement signed today! 🌍 Thoughts on its impact?", date: .now)
             ])
         ]
         updateSelection(topics[0], 0)

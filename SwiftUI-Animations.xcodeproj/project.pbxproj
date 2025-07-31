@@ -84,6 +84,11 @@
 		F83318F22E3A16B600B3B2A0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F12E3A16B600B3B2A0 /* HomeView.swift */; };
 		F83318F42E3A16BC00B3B2A0 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */; };
 		F83318F62E3A2B6000B3B2A0 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */; };
+		F83318F82E3A30B800B3B2A0 /* SegmentTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F72E3A30B800B3B2A0 /* SegmentTab.swift */; };
+		F83318FA2E3A30BF00B3B2A0 /* SegmentTabExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318F92E3A30BF00B3B2A0 /* SegmentTabExampleView.swift */; };
+		F83318FC2E3A32E700B3B2A0 /* SegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FB2E3A32E700B3B2A0 /* SegmentContentView.swift */; };
+		F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */; };
+		F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +186,11 @@
 		F83318F12E3A16B600B3B2A0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		F83318F72E3A30B800B3B2A0 /* SegmentTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTab.swift; sourceTree = "<group>"; };
+		F83318F92E3A30BF00B3B2A0 /* SegmentTabExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabExampleView.swift; sourceTree = "<group>"; };
+		F83318FB2E3A32E700B3B2A0 /* SegmentContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentContentView.swift; sourceTree = "<group>"; };
+		F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabViewModel.swift; sourceTree = "<group>"; };
+		F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabbarView.swift; sourceTree = "<group>"; };
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +234,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F811D6F92E3B172500B3F91A /* SegmentFeed */ = {
+			isa = PBXGroup;
+			children = (
+				F811D6FA2E3B174200B3F91A /* View */,
+				F83318E52E3A0C9200B3B2A0 /* Model */,
+			);
+			path = SegmentFeed;
+			sourceTree = "<group>";
+		};
+		F811D6FA2E3B174200B3F91A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */,
+				F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */,
+				F83318F12E3A16B600B3B2A0 /* HomeView.swift */,
+				F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */,
+				F83318ED2E3A146D00B3B2A0 /* PostsFeedView.swift */,
+				F83318EB2E3A12BE00B3B2A0 /* FeedContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F83318532E3A0AAF00B3B2A0 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +400,7 @@
 		F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F811D6F92E3B172500B3F91A /* SegmentFeed */,
 				F83318E02E3A0AB400B3B2A0 /* SegmentTab */,
 				F83318532E3A0AAF00B3B2A0 /* Calendar */,
 				F83318662E3A0AAF00B3B2A0 /* CustomAnimation */,
@@ -391,7 +424,6 @@
 			isa = PBXGroup;
 			children = (
 				F83318E62E3A0CA500B3B2A0 /* View */,
-				F83318E52E3A0C9200B3B2A0 /* Model */,
 			);
 			path = SegmentTab;
 			sourceTree = "<group>";
@@ -410,12 +442,11 @@
 		F83318E62E3A0CA500B3B2A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F83318F52E3A2B6000B3B2A0 /* TabBarItemView.swift */,
-				F83318F32E3A16BC00B3B2A0 /* TabBarView.swift */,
-				F83318F12E3A16B600B3B2A0 /* HomeView.swift */,
-				F83318EF2E3A14F500B3B2A0 /* ColorExtension.swift */,
-				F83318ED2E3A146D00B3B2A0 /* PostsFeedView.swift */,
-				F83318EB2E3A12BE00B3B2A0 /* FeedContentView.swift */,
+				F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */,
+				F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */,
+				F83318FB2E3A32E700B3B2A0 /* SegmentContentView.swift */,
+				F83318F92E3A30BF00B3B2A0 /* SegmentTabExampleView.swift */,
+				F83318F72E3A30B800B3B2A0 /* SegmentTab.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -600,6 +631,7 @@
 				F83318A62E3A0AAF00B3B2A0 /* CircledTextToggle.swift in Sources */,
 				F83318A72E3A0AAF00B3B2A0 /* CountingTimerView.swift in Sources */,
 				F83318E42E3A0C8E00B3B2A0 /* Post.swift in Sources */,
+				F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */,
 				F83318A82E3A0AAF00B3B2A0 /* EvaluationListView.swift in Sources */,
 				F83318A92E3A0AAF00B3B2A0 /* NumberTransitionView.swift in Sources */,
 				F83318F42E3A16BC00B3B2A0 /* TabBarView.swift in Sources */,
@@ -635,6 +667,7 @@
 				F83318C42E3A0AAF00B3B2A0 /* Event.swift in Sources */,
 				F83318C52E3A0AAF00B3B2A0 /* EventView.swift in Sources */,
 				F83318C62E3A0AAF00B3B2A0 /* MockData.swift in Sources */,
+				F83318FA2E3A30BF00B3B2A0 /* SegmentTabExampleView.swift in Sources */,
 				F83318C72E3A0AAF00B3B2A0 /* PullToRefresh.swift in Sources */,
 				F83318C82E3A0AAF00B3B2A0 /* PullToRefreshSampleView.swift in Sources */,
 				F83318C92E3A0AAF00B3B2A0 /* ScrollViewGeometryReader.swift in Sources */,
@@ -642,10 +675,12 @@
 				F83318CB2E3A0AAF00B3B2A0 /* CategoryContentView.swift in Sources */,
 				F83318CC2E3A0AAF00B3B2A0 /* PagingSegmentView.swift in Sources */,
 				F83318F02E3A14F500B3B2A0 /* ColorExtension.swift in Sources */,
+				F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */,
 				F83318CD2E3A0AAF00B3B2A0 /* SkeletonSampleView.swift in Sources */,
 				F83318CE2E3A0AAF00B3B2A0 /* SkeletonView.swift in Sources */,
 				F83318CF2E3A0AAF00B3B2A0 /* AnalogTimerView.swift in Sources */,
 				F83318D02E3A0AAF00B3B2A0 /* TimerControlView.swift in Sources */,
+				F83318F82E3A30B800B3B2A0 /* SegmentTab.swift in Sources */,
 				F83318D12E3A0AAF00B3B2A0 /* EventDetailsView.swift in Sources */,
 				F83318D22E3A0AAF00B3B2A0 /* EventLocationAndDate.swift in Sources */,
 				F83318D32E3A0AAF00B3B2A0 /* FilterView.swift in Sources */,
@@ -656,6 +691,7 @@
 				F83318D62E3A0AAF00B3B2A0 /* SeatsSelectionView.swift in Sources */,
 				F83318D72E3A0AAF00B3B2A0 /* TicketsInfo.swift in Sources */,
 				F83318D82E3A0AAF00B3B2A0 /* TicketView.swift in Sources */,
+				F83318FC2E3A32E700B3B2A0 /* SegmentContentView.swift in Sources */,
 				F83318D92E3A0AAF00B3B2A0 /* ContentView.swift in Sources */,
 				F83318DA2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift in Sources */,
 			);
