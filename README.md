@@ -14,3 +14,7 @@
     ![segment](Resouces/segment_tab.gif)
 - [骨架图](SwiftUI-Animations/Skeleton)
     ![skeleton](Resouces/skeleton.gif)
+
+| 列标题1 | 效果 |
+|---------|---------|
+| [下拉刷新](SwiftUI-Animations/PullToRefresh)    | ![refresh](Resouces/refresh.gif)    |
