@@ -321,10 +321,11 @@ SwiftUI 动画以其声明式和组合性，极大简化了动画开发。通过
 # 用SwiftUI实现常用的控件
 - [日历视图](SwiftUI-Animations/Calendar)
     - ![calendar](Resouces/calendar.gif)
-### 热力图
-
-### 卡包视图
-
-### 分类Tab
-
-### 骨架图
+- [热力图](SwiftUI-Animations/Calendar/HeatMapView.swift)
+    - ![heat_map](Resouces/heat_map.gif)
+- [卡包视图](SwiftUI-Animations/LoopingStack)
+    - ![card](Resouces/loop_stack.gif)
+- [分类Tab](SwiftUI-Animations/SegmentTab)
+    - [segment](Resouces/segment_tab.gif)
+- [骨架图](SwiftUI-Animations/Skeleton)
+    - [skeleton](Resouces/skeleton.gif)
