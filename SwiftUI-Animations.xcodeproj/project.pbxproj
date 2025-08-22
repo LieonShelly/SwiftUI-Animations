@@ -87,6 +87,7 @@
 		F83318FC2E3A32E700B3B2A0 /* SegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FB2E3A32E700B3B2A0 /* SegmentContentView.swift */; };
 		F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */; };
 		F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */; };
+		F8AE5E6C2E5777F600A608D2 /* ScrollViewImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +191,7 @@
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewImagePreview.swift; sourceTree = "<group>"; };
 		F8E2512C2E4A48A700117279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -388,6 +390,7 @@
 		F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */,
 				F8E2512C2E4A48A700117279 /* Info.plist */,
 				F811D6F92E3B172500B3F91A /* SegmentFeed */,
 				F83318E02E3A0AB400B3B2A0 /* SegmentTab */,
@@ -643,6 +646,7 @@
 				F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */,
 				F83318BA2E3A0AAF00B3B2A0 /* SeatingChartView.swift in Sources */,
 				F83318BB2E3A0AAF00B3B2A0 /* Sector.swift in Sources */,
+				F8AE5E6C2E5777F600A608D2 /* ScrollViewImagePreview.swift in Sources */,
 				F83318BC2E3A0AAF00B3B2A0 /* Stadium.swift in Sources */,
 				F83318BD2E3A0AAF00B3B2A0 /* Tribune.swift in Sources */,
 				F83318BE2E3A0AAF00B3B2A0 /* PourAnimationView.swift in Sources */,

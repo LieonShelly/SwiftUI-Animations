@@ -20,7 +20,7 @@ struct ImagePreviewExample: View {
     var body: some View {
         NavigationStack {
             VStack {
-                ImagePreview(image: UIImage(resource: .invoice))
+                ScrollViewImagePreview(image: UIImage(resource: .invoice))
                 bottomView
             }
             .navigationTitle("电子发票")
@@ -364,3 +364,4 @@ private struct PinchBridge: UIViewRepresentable {
         }
     }
 }
+
