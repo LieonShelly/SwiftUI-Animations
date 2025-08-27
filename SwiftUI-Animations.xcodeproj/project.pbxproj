@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F822CF772E5EA82D0084D625 /* FocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF762E5EA82D0084D625 /* FocusApp.swift */; };
+		F822CF792E5EA8320084D625 /* FocusAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF782E5EA8320084D625 /* FocusAppContentView.swift */; };
+		F822CF7B2E5EA8380084D625 /* AppSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF7A2E5EA8380084D625 /* AppSelectionView.swift */; };
+		F822CF7D2E5EA83E0084D625 /* TimeLimitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF7C2E5EA83E0084D625 /* TimeLimitView.swift */; };
 		F833189D2E3A0AAF00B3B2A0 /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833184E2E3A0AAF00B3B2A0 /* CalendarDay.swift */; };
 		F833189E2E3A0AAF00B3B2A0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F833184F2E3A0AAF00B3B2A0 /* CalendarView.swift */; };
 		F833189F2E3A0AAF00B3B2A0 /* HeatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318502E3A0AAF00B3B2A0 /* HeatMapView.swift */; };
@@ -110,6 +114,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F822CF762E5EA82D0084D625 /* FocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusApp.swift; sourceTree = "<group>"; };
+		F822CF782E5EA8320084D625 /* FocusAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAppContentView.swift; sourceTree = "<group>"; };
+		F822CF7A2E5EA8380084D625 /* AppSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelectionView.swift; sourceTree = "<group>"; };
+		F822CF7C2E5EA83E0084D625 /* TimeLimitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLimitView.swift; sourceTree = "<group>"; };
 		F833184E2E3A0AAF00B3B2A0 /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
 		F833184F2E3A0AAF00B3B2A0 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		F83318502E3A0AAF00B3B2A0 /* HeatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapView.swift; sourceTree = "<group>"; };
@@ -269,6 +277,17 @@
 			path = ZoomableImageView;
 			sourceTree = "<group>";
 		};
+		F822CF752E5EA7F80084D625 /* ScreenTtime */ = {
+			isa = PBXGroup;
+			children = (
+				F822CF7C2E5EA83E0084D625 /* TimeLimitView.swift */,
+				F822CF7A2E5EA8380084D625 /* AppSelectionView.swift */,
+				F822CF782E5EA8320084D625 /* FocusAppContentView.swift */,
+				F822CF762E5EA82D0084D625 /* FocusApp.swift */,
+			);
+			path = ScreenTtime;
+			sourceTree = "<group>";
+		};
 		F83318532E3A0AAF00B3B2A0 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +423,7 @@
 		F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F822CF752E5EA7F80084D625 /* ScreenTtime */,
 				F822CF742E5EA7B70084D625 /* ZoomableImageView */,
 				F8E2512C2E4A48A700117279 /* Info.plist */,
 				F811D6F92E3B172500B3F91A /* SegmentFeed */,
@@ -637,7 +657,9 @@
 				F83318A62E3A0AAF00B3B2A0 /* CircledTextToggle.swift in Sources */,
 				F83318A72E3A0AAF00B3B2A0 /* CountingTimerView.swift in Sources */,
 				F83318E42E3A0C8E00B3B2A0 /* Post.swift in Sources */,
+				F822CF7D2E5EA83E0084D625 /* TimeLimitView.swift in Sources */,
 				F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */,
+				F822CF7B2E5EA8380084D625 /* AppSelectionView.swift in Sources */,
 				F83318A82E3A0AAF00B3B2A0 /* EvaluationListView.swift in Sources */,
 				F83318A92E3A0AAF00B3B2A0 /* NumberTransitionView.swift in Sources */,
 				F83318F42E3A16BC00B3B2A0 /* TabBarView.swift in Sources */,
@@ -657,6 +679,7 @@
 				F83318B52E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift in Sources */,
 				F83318B62E3A0AAF00B3B2A0 /* ArcTribune.swift in Sources */,
 				F83318B72E3A0AAF00B3B2A0 /* Field.swift in Sources */,
+				F822CF772E5EA82D0084D625 /* FocusApp.swift in Sources */,
 				F83318EE2E3A146D00B3B2A0 /* PostsFeedView.swift in Sources */,
 				F83318B82E3A0AAF00B3B2A0 /* LinkedAnimation.swift in Sources */,
 				F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */,
@@ -687,6 +710,7 @@
 				F83318CF2E3A0AAF00B3B2A0 /* AnalogTimerView.swift in Sources */,
 				F83318D02E3A0AAF00B3B2A0 /* TimerControlView.swift in Sources */,
 				F83318F82E3A30B800B3B2A0 /* SegmentTab.swift in Sources */,
+				F822CF792E5EA8320084D625 /* FocusAppContentView.swift in Sources */,
 				F83318D12E3A0AAF00B3B2A0 /* EventDetailsView.swift in Sources */,
 				F83318D22E3A0AAF00B3B2A0 /* EventLocationAndDate.swift in Sources */,
 				F83318D32E3A0AAF00B3B2A0 /* FilterView.swift in Sources */,

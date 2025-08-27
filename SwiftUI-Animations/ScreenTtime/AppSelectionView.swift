@@ -1,3 +1,11 @@
+//
+//  AppSelectionView.swift
+//  SwiftUI-Animations
+//
+//  Created by Renjun Li on 2025/8/27.
+//
+import SwiftUI
+
 import FamilyControls
 
 struct AppSelectionView: View {

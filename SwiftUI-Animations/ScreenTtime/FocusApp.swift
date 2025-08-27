@@ -1,3 +1,10 @@
+//
+//  FocusApp.swift
+//  SwiftUI-Animations
+//
+//  Created by Renjun Li on 2025/8/27.
+//
+
 import SwiftUI
 import FamilyControls
 
@@ -5,7 +12,7 @@ import FamilyControls
 struct FocusApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FocusAppContentView()
                 .onAppear {
                     requestAuthorization()
                 }

@@ -1,4 +1,13 @@
+//
+//  TimeLimitView.swift
+//  SwiftUI-Animations
+//
+//  Created by Renjun Li on 2025/8/27.
+//
+
+import SwiftUI
 import ManagedSettings
+import FamilyControls
 
 struct TimeLimitView: View {
     let selection: FamilyActivitySelection
