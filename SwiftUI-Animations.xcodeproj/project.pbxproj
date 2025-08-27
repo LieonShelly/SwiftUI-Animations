@@ -88,6 +88,8 @@
 		F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */; };
 		F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */; };
 		F8AE5E6C2E5777F600A608D2 /* ScrollViewImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */; };
+		F8C600372E581DF700D2A3F7 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */; };
+		F8C600392E5827AB00D2A3F7 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +194,8 @@
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewImagePreview.swift; sourceTree = "<group>"; };
+		F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
 		F8E2512C2E4A48A700117279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -253,6 +257,16 @@
 				F83318EB2E3A12BE00B3B2A0 /* FeedContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F822CF742E5EA7B70084D625 /* ZoomableImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */,
+				F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */,
+				F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */,
+			);
+			path = ZoomableImageView;
 			sourceTree = "<group>";
 		};
 		F83318532E3A0AAF00B3B2A0 /* Calendar */ = {
@@ -390,7 +404,7 @@
 		F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
 			isa = PBXGroup;
 			children = (
-				F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */,
+				F822CF742E5EA7B70084D625 /* ZoomableImageView */,
 				F8E2512C2E4A48A700117279 /* Info.plist */,
 				F811D6F92E3B172500B3F91A /* SegmentFeed */,
 				F83318E02E3A0AB400B3B2A0 /* SegmentTab */,
@@ -617,6 +631,7 @@
 				F83318A12E3A0AAF00B3B2A0 /* YearListView.swift in Sources */,
 				F83318A22E3A0AAF00B3B2A0 /* AnimatedRadarChart.swift in Sources */,
 				F83318A32E3A0AAF00B3B2A0 /* BrewInfoView.swift in Sources */,
+				F8C600372E581DF700D2A3F7 /* ImagePreviewViewController.swift in Sources */,
 				F83318A42E3A0AAF00B3B2A0 /* BrewTime.swift in Sources */,
 				F83318A52E3A0AAF00B3B2A0 /* BrewTimer.swift in Sources */,
 				F83318A62E3A0AAF00B3B2A0 /* CircledTextToggle.swift in Sources */,
@@ -634,6 +649,7 @@
 				F83318AE2E3A0AAF00B3B2A0 /* StaticRatingView.swift in Sources */,
 				F83318AF2E3A0AAF00B3B2A0 /* TeaRatingsView.swift in Sources */,
 				F83318B02E3A0AAF00B3B2A0 /* TimerCompleteView.swift in Sources */,
+				F8C600392E5827AB00D2A3F7 /* ZoomableImageView.swift in Sources */,
 				F83318B12E3A0AAF00B3B2A0 /* TimerDigitsView.swift in Sources */,
 				F83318B22E3A0AAF00B3B2A0 /* TimerManager.swift in Sources */,
 				F83318B32E3A0AAF00B3B2A0 /* TimerView.swift in Sources */,

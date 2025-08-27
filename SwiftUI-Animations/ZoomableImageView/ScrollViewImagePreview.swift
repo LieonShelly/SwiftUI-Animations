@@ -9,17 +9,30 @@
 import SwiftUI
 import UIKit
 
+struct ZoomableImageSwiftUIView: UIViewRepresentable {
+    let image: UIImage
+    
+    func makeUIView(context: Context) -> ZoomableImageView {
+        return ZoomableImageView(image: image)
+    }
+    
+    func updateUIView(_ uiView: ZoomableImageView, context: Context) {
+        uiView.updateImage(image)
+    }
+    
+}
+
 struct ScrollViewImagePreview: UIViewControllerRepresentable {
     let image: UIImage
     
-    func makeUIViewController(context: Context) -> ImagePreviewViewController {
-        let viewController = ImagePreviewViewController()
-        viewController.image = image
+    func makeUIViewController(context: Context) -> ImagePreviewViewControllerGpt {
+        let viewController = ImagePreviewViewControllerGpt()
+//        viewController.image = image
         return viewController
     }
     
-    func updateUIViewController(_ uiViewController: ImagePreviewViewController, context: Context) {
-        uiViewController.image = image
+    func updateUIViewController(_ uiViewController: ImagePreviewViewControllerGpt, context: Context) {
+//        uiViewController.image = image
     }
 }
 
@@ -109,6 +122,7 @@ class ImagePreviewViewController: UIViewController, UIScrollViewDelegate {
             let imageH = imageWidth * imageAspect
             self.imageHeight.constant = imageH
             self.imageHeight.isActive = true
+            scrollView.contentSize = CGSize(width: imageWidth, height: 0)
         }
     }
     

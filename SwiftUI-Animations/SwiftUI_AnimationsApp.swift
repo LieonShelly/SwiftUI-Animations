@@ -20,7 +20,7 @@ struct ImagePreviewExample: View {
     var body: some View {
         NavigationStack {
             VStack {
-                ScrollViewImagePreview(image: UIImage(resource: .invoice))
+                ZoomableImageSwiftUIView(image: UIImage(resource: .invoice))
                 bottomView
             }
             .navigationTitle("电子发票")
