@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-//@main
+@main
 struct SwiftUI_AnimationsApp: App {
     var body: some Scene {
         WindowGroup {
-            ImagePreviewExample()
+            AnimatedMultilineText()
         }
     }
 }

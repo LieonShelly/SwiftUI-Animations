@@ -17,3 +17,18 @@ struct FocusAppContentView: View {
         }
     }
 }
+
+
+class Property {
+    deinit {
+        print("Property-deint")
+    }
+}
+
+class Test {
+    let property = Property()
+    
+    deinit {
+        print("Test-deinit")
+    }
+}

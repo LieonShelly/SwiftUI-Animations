@@ -8,7 +8,7 @@
 import SwiftUI
 import FamilyControls
 
-@main
+//@main
 struct FocusApp: App {
     var body: some Scene {
         WindowGroup {
@@ -29,3 +29,6 @@ struct FocusApp: App {
         }
     }
 }
+
+
+

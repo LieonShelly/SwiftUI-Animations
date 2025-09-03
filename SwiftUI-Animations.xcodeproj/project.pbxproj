@@ -91,6 +91,8 @@
 		F83318FC2E3A32E700B3B2A0 /* SegmentContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FB2E3A32E700B3B2A0 /* SegmentContentView.swift */; };
 		F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */; };
 		F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */; };
+		F87897F12E67384E0047C92C /* AnimatedTextCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87897F02E67384E0047C92C /* AnimatedTextCanvasView.swift */; };
+		F87897F32E67386B0047C92C /* AnimatedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87897F22E67386B0047C92C /* AnimatedTextView.swift */; };
 		F8AE5E6C2E5777F600A608D2 /* ScrollViewImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */; };
 		F8C600372E581DF700D2A3F7 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */; };
 		F8C600392E5827AB00D2A3F7 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */; };
@@ -201,6 +203,8 @@
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87897F02E67384E0047C92C /* AnimatedTextCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextCanvasView.swift; sourceTree = "<group>"; };
+		F87897F22E67386B0047C92C /* AnimatedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTextView.swift; sourceTree = "<group>"; };
 		F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewImagePreview.swift; sourceTree = "<group>"; };
 		F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
 		F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 		F822CF752E5EA7F80084D625 /* ScreenTtime */ = {
 			isa = PBXGroup;
 			children = (
+				F87897F22E67386B0047C92C /* AnimatedTextView.swift */,
+				F87897F02E67384E0047C92C /* AnimatedTextCanvasView.swift */,
 				F822CF7C2E5EA83E0084D625 /* TimeLimitView.swift */,
 				F822CF7A2E5EA8380084D625 /* AppSelectionView.swift */,
 				F822CF782E5EA8320084D625 /* FocusAppContentView.swift */,
@@ -654,6 +660,7 @@
 				F8C600372E581DF700D2A3F7 /* ImagePreviewViewController.swift in Sources */,
 				F83318A42E3A0AAF00B3B2A0 /* BrewTime.swift in Sources */,
 				F83318A52E3A0AAF00B3B2A0 /* BrewTimer.swift in Sources */,
+				F87897F32E67386B0047C92C /* AnimatedTextView.swift in Sources */,
 				F83318A62E3A0AAF00B3B2A0 /* CircledTextToggle.swift in Sources */,
 				F83318A72E3A0AAF00B3B2A0 /* CountingTimerView.swift in Sources */,
 				F83318E42E3A0C8E00B3B2A0 /* Post.swift in Sources */,
@@ -682,6 +689,7 @@
 				F822CF772E5EA82D0084D625 /* FocusApp.swift in Sources */,
 				F83318EE2E3A146D00B3B2A0 /* PostsFeedView.swift in Sources */,
 				F83318B82E3A0AAF00B3B2A0 /* LinkedAnimation.swift in Sources */,
+				F87897F12E67384E0047C92C /* AnimatedTextCanvasView.swift in Sources */,
 				F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */,
 				F83318BA2E3A0AAF00B3B2A0 /* SeatingChartView.swift in Sources */,
 				F83318BB2E3A0AAF00B3B2A0 /* Sector.swift in Sources */,
