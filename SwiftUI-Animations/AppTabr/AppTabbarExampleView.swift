@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-
-struct AppTabbarExampleView: View {
-    @State var progress: CGFloat = 0
-    @StateObject var tabbarViewModel = AppTabbarViewModel(
+class AppTabbarExampleViewModel: ObservableObject {
+     var tabbarViewModel = AppTabbarViewModel(
         items: [
         .init(
             icon: Image(.calendar),
@@ -22,20 +20,42 @@ struct AppTabbarExampleView: View {
             icon: Image(.threads),
             normalColor: .white,
             selectedColor: .red,
-            selectedOpacity: 1
+            selectedOpacity: 0
         )
     ])
+     var contentViewModel = AppScrollContentViewModel()
     
-    var body: some View {
-        VStack(spacing: 100) {
-            Slider(value: $progress, in: 0 ... 1)
-            AppTabbar(viewModel: tabbarViewModel)
-                .padding(.horizontal, 50)
+
+    init() {
+        contentViewModel.didScroll = { [weak self] progress, isToRight in
+            guard let self else { return }
+            self.tabbarViewModel.updateOpacity(progress, isToRight: isToRight)
         }
-        .padding()
-        .onChange(of: progress) { oldValue, newValue in
-            print(newValue)
-            tabbarViewModel.updateOpacity(newValue, isToRight: false)
+        contentViewModel.didEndScroll = { [weak self] index in
+            guard let self else { return }
+            self.tabbarViewModel.updateSelectedIndex(index)
+        }
+        tabbarViewModel.didTap = { [weak self] index in
+            guard let self else { return }
+            self.contentViewModel.scrollTo(index)
         }
     }
+}
+
+
+struct AppTabbarExampleView: View {
+    @StateObject var viewModel = AppTabbarExampleViewModel()
+   
+    var body: some View {
+        VStack(spacing: 10) {
+            AppScrollContentView(viewModel: viewModel.contentViewModel)
+            AppTabbar(viewModel: viewModel.tabbarViewModel)
+                .padding(.horizontal, 50)
+        }
+    }
+}
+
+
+#Preview {
+    AppTabbarExampleView()
 }

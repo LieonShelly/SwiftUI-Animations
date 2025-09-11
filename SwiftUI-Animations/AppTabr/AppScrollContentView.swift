@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-
 struct AppScrollContentView: View {
     @ObservedObject var viewModel: AppScrollContentViewModel
-    @State var scrollPostion: ScrollPosition = .init(x: 0)
     
     var body: some View {
         GeometryReader { proxy in
@@ -19,20 +17,26 @@ struct AppScrollContentView: View {
                     Rectangle()
                         .fill(.red)
                         .frame(width: proxy.size.width, height: proxy.size.height)
+                        .id(0)
                     
                     Rectangle()
                         .fill(.blue)
                         .frame(width: proxy.size.width, height: proxy.size.height)
-                    
+                        .id(1)
                 }
             }
-            .scrollPosition($scrollPostion)
+            .scrollPosition($viewModel.scrollPostion)
             .scrollTargetBehavior(.paging)
-            .onScrollPhaseChange { oldPhase, newPhase in
-                print("newPhase: \(newPhase))")
-            }
             .onScrollGeometryChange(for: CGPoint.self, of: { $0.contentOffset }) { oldValue, newValue in
-                print("offset:\(newValue) - progress:\(newValue.x / proxy.size.width)")
+                let progress = newValue.x / proxy.size.width
+                viewModel.updateScrollProgress(progress)
+            }
+            .onScrollPhaseChange { oldPhase, newPhase in
+                switch newPhase {
+                case .idle:
+                    viewModel.updateSelectedIndex()
+                default: break
+                }
             }
         }
        
@@ -40,13 +44,6 @@ struct AppScrollContentView: View {
 }
 
 
-import Combine
-import Foundation
-
-class AppScrollContentViewModel: ObservableObject {
-    
-    
-}
 
 
 #Preview {

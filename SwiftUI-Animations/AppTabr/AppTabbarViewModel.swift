@@ -9,15 +9,15 @@ import Foundation
 import Combine
 
 class AppTabbarViewModel: ObservableObject {
-    @Published var items: [AppTabbarItem]
-    var selectedIndex: Int = 1
+    @Published private(set) var items: [AppTabbarItem]
+    private(set) var selectedIndex: Int = 0
+    var didTap: ((Int) -> Void)?
     
     init(items: [AppTabbarItem]) {
         self.items = items
     }
     
-    
-    func didTapTabrItem(_ item: AppTabbarItem) {
+    func didTapTabrItem(_ item: AppTabbarItem, needNotify: Bool = true) {
         guard !item.isSelected else { return }
         guard let index = items.firstIndex(where: { $0.id == item.id }) else { return }
         var newItem = item
@@ -33,9 +33,14 @@ class AppTabbarViewModel: ObservableObject {
             )}
         items = newItems
         items[index] = newItem
+        selectedIndex = index
+        if needNotify {
+            didTap?(index)
+        }
     }
     
     func updateOpacity(_ value: CGFloat, isToRight: Bool) {
+        let value = min(1, max(value, 0))
         if isToRight {
             let currentIndex = selectedIndex
             let destIndex = currentIndex + 1
@@ -47,9 +52,6 @@ class AppTabbarViewModel: ObservableObject {
             destItem.selectedOpacity = value
             items[currentIndex] = cureentItem
             items[destIndex] = destItem
-            if value >= 1.0 {
-                selectedIndex = destIndex
-            }
         } else {
             let currentIndex = selectedIndex
             let destIndex = currentIndex - 1
@@ -57,13 +59,17 @@ class AppTabbarViewModel: ObservableObject {
             var cureentItem = items[currentIndex]
             var destItem = items[destIndex]
             
-            cureentItem.selectedOpacity = 1 - value
-            destItem.selectedOpacity = value
+            cureentItem.selectedOpacity = value
+            destItem.selectedOpacity = 1 - value
             items[currentIndex] = cureentItem
             items[destIndex] = destItem
-            if value >= 1.0 {
-                selectedIndex = destIndex
-            }
         }
+    }
+    
+    func updateSelectedIndex(_ index: Int) {
+        guard index < items.count else { return }
+        selectedIndex = index
+        let item = items[selectedIndex]
+        didTapTabrItem(item)
     }
 }

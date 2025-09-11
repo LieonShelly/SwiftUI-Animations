@@ -96,6 +96,7 @@
 		F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */; };
 		F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */; };
 		F84A4EFC2E72D62A001E8E2A /* AppScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A4EFB2E72D62A001E8E2A /* AppScrollContentView.swift */; };
+		F861F4312E730E7200709F8D /* AppScrollContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861F4302E730E7200709F8D /* AppScrollContentViewModel.swift */; };
 		F87897F12E67384E0047C92C /* AnimatedTextCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87897F02E67384E0047C92C /* AnimatedTextCanvasView.swift */; };
 		F87897F32E67386B0047C92C /* AnimatedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87897F22E67386B0047C92C /* AnimatedTextView.swift */; };
 		F883BB062E6FD9A200940A86 /* VerticalWaveLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883BB052E6FD9A200940A86 /* VerticalWaveLine.swift */; };
@@ -216,6 +217,7 @@
 		F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabViewModel.swift; sourceTree = "<group>"; };
 		F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabbarView.swift; sourceTree = "<group>"; };
 		F84A4EFB2E72D62A001E8E2A /* AppScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScrollContentView.swift; sourceTree = "<group>"; };
+		F861F4302E730E7200709F8D /* AppScrollContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScrollContentViewModel.swift; sourceTree = "<group>"; };
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA1A2E0A895700C2D83B /* SwiftUI-AnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-AnimationsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -549,6 +551,7 @@
 		F8D0070E2E717B4700A88C47 /* AppTabr */ = {
 			isa = PBXGroup;
 			children = (
+				F861F4302E730E7200709F8D /* AppScrollContentViewModel.swift */,
 				F81D14392E727B77007AA29D /* AppTabbarExampleView.swift */,
 				F81D14372E727B65007AA29D /* AppTabbarItem.swift */,
 				F81D14352E727B5B007AA29D /* AppTabbarViewModel.swift */,
@@ -754,6 +757,7 @@
 				F8D0070A2E7174FA00A88C47 /* FloatingTabView.swift in Sources */,
 				F84A4EFC2E72D62A001E8E2A /* AppScrollContentView.swift in Sources */,
 				F8D0070B2E7174FA00A88C47 /* FloatingTabViewExampleView.swift in Sources */,
+				F861F4312E730E7200709F8D /* AppScrollContentViewModel.swift in Sources */,
 				F8D0070C2E7174FA00A88C47 /* FLoatTabConfig.swift in Sources */,
 				F87897F12E67384E0047C92C /* AnimatedTextCanvasView.swift in Sources */,
 				F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */,
