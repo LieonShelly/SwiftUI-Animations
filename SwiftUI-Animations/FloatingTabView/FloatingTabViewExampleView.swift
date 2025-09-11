@@ -27,7 +27,7 @@ enum AppTab: String, CaseIterable, FloatingTabProtocol {
     }
 }
 
-struct ContentView: View {
+struct FloatingTabViewExampleView: View {
     @State private var activeTab: AppTab = .library
     
     var body: some View {
@@ -66,5 +66,5 @@ struct LibraryView: View {
 }
 
 #Preview {
-    ContentView()
+    FloatingTabViewExampleView()
 }

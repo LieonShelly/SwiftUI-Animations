@@ -1,8 +1,16 @@
+//
+//  AppTabbarViewModel.swift
+//  SwiftUI-Animations
+//
+//  Created by Renjun Li on 2025/9/11.
+//
 
+import Foundation
 import Combine
 
 class AppTabbarViewModel: ObservableObject {
     @Published var items: [AppTabbarItem]
+    var selectedIndex: Int = 1
     
     init(items: [AppTabbarItem]) {
         self.items = items
@@ -25,5 +33,37 @@ class AppTabbarViewModel: ObservableObject {
             )}
         items = newItems
         items[index] = newItem
+    }
+    
+    func updateOpacity(_ value: CGFloat, isToRight: Bool) {
+        if isToRight {
+            let currentIndex = selectedIndex
+            let destIndex = currentIndex + 1
+            guard destIndex < items.count else { return }
+            var cureentItem = items[currentIndex]
+            var destItem = items[destIndex]
+            
+            cureentItem.selectedOpacity = 1 - value
+            destItem.selectedOpacity = value
+            items[currentIndex] = cureentItem
+            items[destIndex] = destItem
+            if value >= 1.0 {
+                selectedIndex = destIndex
+            }
+        } else {
+            let currentIndex = selectedIndex
+            let destIndex = currentIndex - 1
+            guard destIndex >= 0 else { return }
+            var cureentItem = items[currentIndex]
+            var destItem = items[destIndex]
+            
+            cureentItem.selectedOpacity = 1 - value
+            destItem.selectedOpacity = value
+            items[currentIndex] = cureentItem
+            items[destIndex] = destItem
+            if value >= 1.0 {
+                selectedIndex = destIndex
+            }
+        }
     }
 }

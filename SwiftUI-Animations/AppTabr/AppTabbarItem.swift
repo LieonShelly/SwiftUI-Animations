@@ -1,5 +1,12 @@
+//
+//  AppTabbarItem.swift
+//  SwiftUI-Animations
+//
+//  Created by Renjun Li on 2025/9/11.
+//
 
-import Combine
+import SwiftUI
+import Foundation
 
 struct AppTabbarItem: Identifiable {
     var id = UUID().uuidString

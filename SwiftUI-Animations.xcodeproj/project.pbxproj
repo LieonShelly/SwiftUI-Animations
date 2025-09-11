@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81D14342E727B33007AA29D /* AppTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D14332E727B33007AA29D /* AppTabbarView.swift */; };
+		F81D14362E727B5B007AA29D /* AppTabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D14352E727B5B007AA29D /* AppTabbarViewModel.swift */; };
+		F81D14382E727B65007AA29D /* AppTabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D14372E727B65007AA29D /* AppTabbarItem.swift */; };
+		F81D143A2E727B77007AA29D /* AppTabbarExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81D14392E727B77007AA29D /* AppTabbarExampleView.swift */; };
 		F822CF772E5EA82D0084D625 /* FocusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF762E5EA82D0084D625 /* FocusApp.swift */; };
 		F822CF792E5EA8320084D625 /* FocusAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF782E5EA8320084D625 /* FocusAppContentView.swift */; };
 		F822CF7B2E5EA8380084D625 /* AppSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822CF7A2E5EA8380084D625 /* AppSelectionView.swift */; };
@@ -97,6 +101,11 @@
 		F8AE5E6C2E5777F600A608D2 /* ScrollViewImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */; };
 		F8C600372E581DF700D2A3F7 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */; };
 		F8C600392E5827AB00D2A3F7 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */; };
+		F8D007092E7174FA00A88C47 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D007022E7174FA00A88C47 /* ViewExtensions.swift */; };
+		F8D0070A2E7174FA00A88C47 /* FloatingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D007002E7174FA00A88C47 /* FloatingTabView.swift */; };
+		F8D0070B2E7174FA00A88C47 /* FloatingTabViewExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D007052E7174FA00A88C47 /* FloatingTabViewExampleView.swift */; };
+		F8D0070C2E7174FA00A88C47 /* FLoatTabConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D007012E7174FA00A88C47 /* FLoatTabConfig.swift */; };
+		F8D007102E717D2900A88C47 /* AppTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0070F2E717D2900A88C47 /* AppTabbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +126,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F81D14332E727B33007AA29D /* AppTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarView.swift; sourceTree = "<group>"; };
+		F81D14352E727B5B007AA29D /* AppTabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarViewModel.swift; sourceTree = "<group>"; };
+		F81D14372E727B65007AA29D /* AppTabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarItem.swift; sourceTree = "<group>"; };
+		F81D14392E727B77007AA29D /* AppTabbarExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbarExampleView.swift; sourceTree = "<group>"; };
 		F822CF762E5EA82D0084D625 /* FocusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusApp.swift; sourceTree = "<group>"; };
 		F822CF782E5EA8320084D625 /* FocusAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAppContentView.swift; sourceTree = "<group>"; };
 		F822CF7A2E5EA8380084D625 /* AppSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSelectionView.swift; sourceTree = "<group>"; };
@@ -210,6 +223,11 @@
 		F8AE5E6B2E5777F600A608D2 /* ScrollViewImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewImagePreview.swift; sourceTree = "<group>"; };
 		F8C600362E581DF700D2A3F7 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
 		F8C600382E5827AB00D2A3F7 /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
+		F8D007002E7174FA00A88C47 /* FloatingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabView.swift; sourceTree = "<group>"; };
+		F8D007012E7174FA00A88C47 /* FLoatTabConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLoatTabConfig.swift; sourceTree = "<group>"; };
+		F8D007022E7174FA00A88C47 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		F8D007052E7174FA00A88C47 /* FloatingTabViewExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabViewExampleView.swift; sourceTree = "<group>"; };
+		F8D0070F2E717D2900A88C47 /* AppTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabbar.swift; sourceTree = "<group>"; };
 		F8E2512C2E4A48A700117279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -432,6 +450,7 @@
 		F833189C2E3A0AAF00B3B2A0 /* SwiftUI-Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F8D0070E2E717B4700A88C47 /* AppTabr */,
 				F822CF752E5EA7F80084D625 /* ScreenTtime */,
 				F822CF742E5EA7B70084D625 /* ZoomableImageView */,
 				F8E2512C2E4A48A700117279 /* Info.plist */,
@@ -450,6 +469,7 @@
 				F83318992E3A0AAF00B3B2A0 /* Assets.xcassets */,
 				F833189A2E3A0AAF00B3B2A0 /* ContentView.swift */,
 				F833189B2E3A0AAF00B3B2A0 /* SwiftUI_AnimationsApp.swift */,
+				F8D007072E7174FA00A88C47 /* FloatingTabView */,
 			);
 			path = "SwiftUI-Animations";
 			sourceTree = "<group>";
@@ -503,6 +523,37 @@
 				F868FA242E0A895700C2D83B /* SwiftUI-AnimationsUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F8D007032E7174FA00A88C47 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F8D007072E7174FA00A88C47 /* FloatingTabView */ = {
+			isa = PBXGroup;
+			children = (
+				F8D007002E7174FA00A88C47 /* FloatingTabView.swift */,
+				F8D007012E7174FA00A88C47 /* FLoatTabConfig.swift */,
+				F8D007022E7174FA00A88C47 /* ViewExtensions.swift */,
+				F8D007032E7174FA00A88C47 /* Source */,
+				F8D007052E7174FA00A88C47 /* FloatingTabViewExampleView.swift */,
+			);
+			path = FloatingTabView;
+			sourceTree = "<group>";
+		};
+		F8D0070E2E717B4700A88C47 /* AppTabr */ = {
+			isa = PBXGroup;
+			children = (
+				F81D14392E727B77007AA29D /* AppTabbarExampleView.swift */,
+				F81D14372E727B65007AA29D /* AppTabbarItem.swift */,
+				F81D14352E727B5B007AA29D /* AppTabbarViewModel.swift */,
+				F81D14332E727B33007AA29D /* AppTabbarView.swift */,
+				F8D0070F2E717D2900A88C47 /* AppTabbar.swift */,
+			);
+			path = AppTabr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81D14382E727B65007AA29D /* AppTabbarItem.swift in Sources */,
 				F833189D2E3A0AAF00B3B2A0 /* CalendarDay.swift in Sources */,
 				F83318EA2E3A0D9A00B3B2A0 /* HomeViewModel.swift in Sources */,
 				F833189E2E3A0AAF00B3B2A0 /* CalendarView.swift in Sources */,
@@ -670,6 +722,7 @@
 				F83318E42E3A0C8E00B3B2A0 /* Post.swift in Sources */,
 				F822CF7D2E5EA83E0084D625 /* TimeLimitView.swift in Sources */,
 				F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */,
+				F8D007102E717D2900A88C47 /* AppTabbar.swift in Sources */,
 				F822CF7B2E5EA8380084D625 /* AppSelectionView.swift in Sources */,
 				F83318A82E3A0AAF00B3B2A0 /* EvaluationListView.swift in Sources */,
 				F83318A92E3A0AAF00B3B2A0 /* NumberTransitionView.swift in Sources */,
@@ -682,6 +735,7 @@
 				F83318AE2E3A0AAF00B3B2A0 /* StaticRatingView.swift in Sources */,
 				F83318AF2E3A0AAF00B3B2A0 /* TeaRatingsView.swift in Sources */,
 				F83318B02E3A0AAF00B3B2A0 /* TimerCompleteView.swift in Sources */,
+				F81D14362E727B5B007AA29D /* AppTabbarViewModel.swift in Sources */,
 				F8C600392E5827AB00D2A3F7 /* ZoomableImageView.swift in Sources */,
 				F83318B12E3A0AAF00B3B2A0 /* TimerDigitsView.swift in Sources */,
 				F83318B22E3A0AAF00B3B2A0 /* TimerManager.swift in Sources */,
@@ -693,6 +747,10 @@
 				F822CF772E5EA82D0084D625 /* FocusApp.swift in Sources */,
 				F83318EE2E3A146D00B3B2A0 /* PostsFeedView.swift in Sources */,
 				F83318B82E3A0AAF00B3B2A0 /* LinkedAnimation.swift in Sources */,
+				F8D007092E7174FA00A88C47 /* ViewExtensions.swift in Sources */,
+				F8D0070A2E7174FA00A88C47 /* FloatingTabView.swift in Sources */,
+				F8D0070B2E7174FA00A88C47 /* FloatingTabViewExampleView.swift in Sources */,
+				F8D0070C2E7174FA00A88C47 /* FLoatTabConfig.swift in Sources */,
 				F87897F12E67384E0047C92C /* AnimatedTextCanvasView.swift in Sources */,
 				F83318B92E3A0AAF00B3B2A0 /* RectTribune.swift in Sources */,
 				F83318BA2E3A0AAF00B3B2A0 /* SeatingChartView.swift in Sources */,
@@ -702,6 +760,7 @@
 				F83318BD2E3A0AAF00B3B2A0 /* Tribune.swift in Sources */,
 				F83318BE2E3A0AAF00B3B2A0 /* PourAnimationView.swift in Sources */,
 				F83318BF2E3A0AAF00B3B2A0 /* PourSceneView.swift in Sources */,
+				F81D14342E727B33007AA29D /* AppTabbarView.swift in Sources */,
 				F83318C02E3A0AAF00B3B2A0 /* RatingView.swift in Sources */,
 				F83318C12E3A0AAF00B3B2A0 /* WaveShape.swift in Sources */,
 				F83318C22E3A0AAF00B3B2A0 /* BallView.swift in Sources */,
@@ -720,6 +779,7 @@
 				F83318CD2E3A0AAF00B3B2A0 /* SkeletonSampleView.swift in Sources */,
 				F83318CE2E3A0AAF00B3B2A0 /* SkeletonView.swift in Sources */,
 				F83318CF2E3A0AAF00B3B2A0 /* AnalogTimerView.swift in Sources */,
+				F81D143A2E727B77007AA29D /* AppTabbarExampleView.swift in Sources */,
 				F83318D02E3A0AAF00B3B2A0 /* TimerControlView.swift in Sources */,
 				F83318F82E3A30B800B3B2A0 /* SegmentTab.swift in Sources */,
 				F822CF792E5EA8320084D625 /* FocusAppContentView.swift in Sources */,
