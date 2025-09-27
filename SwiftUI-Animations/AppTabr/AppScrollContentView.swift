@@ -24,6 +24,9 @@ struct AppScrollContentView: View {
                         .frame(width: proxy.size.width, height: proxy.size.height)
                         .id(1)
                 }
+                .overlay {
+                    horizontalLine
+                }
             }
             .scrollPosition($viewModel.scrollPostion)
             .scrollTargetBehavior(.paging)
@@ -40,6 +43,13 @@ struct AppScrollContentView: View {
             }
         }
        
+    }
+    
+    var horizontalLine: some View {
+        Rectangle()
+            .fill(.yellow)
+            .frame(width: 200, height: 10)
+            .rotationEffect(.degrees(90 * viewModel.preProgress), anchor: .init(x: 1, y: 0.5))
     }
 }
 

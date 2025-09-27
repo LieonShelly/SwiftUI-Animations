@@ -12,7 +12,7 @@ class AppScrollContentViewModel: ObservableObject {
     @Published var scrollPostion: ScrollPosition = .init(id: 0)
     var didScroll: ((_ progress: CGFloat, _ isToRight: Bool) -> Void)?
     var didEndScroll: ((Int) -> Void)?
-    var preProgress: CGFloat = 0
+    @Published var preProgress: CGFloat = 0
     
     func scrollTo(_ index: Int) {
         withAnimation(.easeInOut) {
@@ -24,6 +24,7 @@ class AppScrollContentViewModel: ObservableObject {
         let isToRight = scrollProgress > preProgress
         didScroll?(scrollProgress, isToRight)
         preProgress = scrollProgress
+        print("preProgress:\(preProgress)")
     }
     
     func updateSelectedIndex() {

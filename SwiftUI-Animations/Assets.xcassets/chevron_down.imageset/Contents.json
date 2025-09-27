@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "chevron_down.svg",
+      "idiom": "universal",
+      "language-direction": "left-to-right"
+    },
+    {
+      "filename": "rtl_chevron_down.svg",
+      "idiom": "universal",
+      "language-direction": "right-to-left"
+    }
+  ],
+  "info": {
+    "author": "figma",
+    "version": 1
+  },
+  "properties": {
+    "preserves-vector-representation": true,
+    "template-rendering-intent": "template"
+  }
+}
