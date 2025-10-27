@@ -18,7 +18,7 @@ struct SegmentTabExampleView: View {
                 .onTapGesture {
                     titles = ["Title0", "Title1", "Title2", "Title3", "Title4", "Title5", "Title6"]
                 }
-        }
+        }.debug()
     }
 }
 
