@@ -15,7 +15,7 @@ struct LoopingStackExampleView: View {
                 ForEach(0 ..< 5, id: \.self) { _ in
                     Rectangle()
                         .fill(Color.random)
-                        .frame(width: 250, height: 400)
+                        .frame(width: 300, height: 100)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
             }

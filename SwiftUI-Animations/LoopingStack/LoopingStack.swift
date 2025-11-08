@@ -47,30 +47,31 @@ fileprivate struct LoopingStackCardView<Content: View>: View {
     @ViewBuilder var content: Content
     @State private var offset: CGFloat = .zero
     @State private var viewSize: CGSize = .zero
+    @State private var randomAnge: CGFloat = 2
     
     var body: some View {
         let extraOffset = min(CGFloat(index) * 20, CGFloat(visibleCardsCount) * 20)
         let scale = 1 - min(CGFloat(index) * 0.07, CGFloat(visibleCardsCount) * 0.07)
-        let rotationDegree: CGFloat = -40
-        let rotation = max(min(-offset / viewSize.width, 1), 0) * rotationDegree
+        let rotationDegree: CGFloat = -10
+        let rotation = max(min(-offset / viewSize.height, 1), 0) * rotationDegree
         content
             .onGeometryChange(for: CGSize.self, of: {
                 $0.size
             }, action: {
                 viewSize = $0
             })
-            .offset(x: extraOffset)
-            .scaleEffect(scale, anchor: .trailing)
-            .animation(.smooth(duration: 0.25, extraBounce: 0), value: index)
-            .offset(x: offset)
-            .rotation3DEffect(.degrees(rotation), axis: (0, 1, 0), anchor: .center, perspective: 0.5)
+            .animation(.smooth(duration: 0.5, extraBounce: 0), value: randomAnge)
+            .offset(y: offset)
+            .rotationEffect(.degrees(randomAnge * CGFloat(index)), anchor: .center)
+            .rotation3DEffect(.degrees(-rotation), axis: (1, 0, 0), anchor: .center, perspective: 0.5)
+          
             .gesture(
                 DragGesture()
                     .onChanged({ value in
                         /// only allow left side interaction
-                        let xOffset = -max(-value.translation.width, 0)
+                        let xOffset = -max(-value.translation.height, 0)
                         if let maxTranslationWidth {
-                            let progress = -max(min(-xOffset / maxTranslationWidth, 1), 0) * viewSize.width
+                            let progress = -max(min(-xOffset / maxTranslationWidth, 1), 0) * viewSize.height
                             offset = progress
                         } else {
                             offset = xOffset
@@ -78,8 +79,8 @@ fileprivate struct LoopingStackCardView<Content: View>: View {
                       
                     })
                     .onEnded({ value in
-                        let xVelocity = max(-value.velocity.width /  5, 0)
-                        if (-offset + xVelocity) > viewSize.width * 0.65 {
+                        let xVelocity = max(-value.velocity.height /  5, 0)
+                        if (-offset + xVelocity) > viewSize.height * 0.65 {
                             print("Push to next card")
                             pushToNextCard()
                         } else {
@@ -90,18 +91,22 @@ fileprivate struct LoopingStackCardView<Content: View>: View {
                     }),
                 isEnabled: index == 0 && count > 1
             )
+            .onTapGesture {
+                pushToNextCard()
+            }
     }
     
     private func pushToNextCard() {
-        withAnimation(.smooth(duration: 0.25, extraBounce: 0).logicallyComplete(after: 0.15), completionCriteria: .logicallyComplete) {
-            offset = -viewSize.width
+        withAnimation(.smooth(duration: 0.5, extraBounce: 0).logicallyComplete(after: 0.5), completionCriteria: .logicallyComplete) {
+            offset = -viewSize.height
+         
         } completion: {
             rotation += 1
             withAnimation(.smooth(duration: 0.25, extraBounce: 0)) {
                 offset = .zero
             }
-        }
 
+        }
     }
 }
 
