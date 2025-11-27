@@ -97,6 +97,8 @@
 		F83318FE2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */; };
 		F843CA742E3A74C100B441D6 /* SegmentTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */; };
 		F84A4EFC2E72D62A001E8E2A /* AppScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84A4EFB2E72D62A001E8E2A /* AppScrollContentView.swift */; };
+		F85746942ED7EAA500B166B9 /* MyCardWalletFlowSegViewV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85746932ED7EAA500B166B9 /* MyCardWalletFlowSegViewV3.swift */; };
+		F85746962ED7EAAD00B166B9 /* CustomPagedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85746952ED7EAAD00B166B9 /* CustomPagedView.swift */; };
 		F85C5C582E74269A00AE825B /* AppleIDSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85C5C572E74269A00AE825B /* AppleIDSignInView.swift */; };
 		F861F4312E730E7200709F8D /* AppScrollContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861F4302E730E7200709F8D /* AppScrollContentViewModel.swift */; };
 		F87897F12E67384E0047C92C /* AnimatedTextCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87897F02E67384E0047C92C /* AnimatedTextCanvasView.swift */; };
@@ -233,6 +235,8 @@
 		F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabViewModel.swift; sourceTree = "<group>"; };
 		F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentTabbarView.swift; sourceTree = "<group>"; };
 		F84A4EFB2E72D62A001E8E2A /* AppScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScrollContentView.swift; sourceTree = "<group>"; };
+		F85746932ED7EAA500B166B9 /* MyCardWalletFlowSegViewV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardWalletFlowSegViewV3.swift; sourceTree = "<group>"; };
+		F85746952ED7EAAD00B166B9 /* CustomPagedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPagedView.swift; sourceTree = "<group>"; };
 		F85C5C572E74269A00AE825B /* AppleIDSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIDSignInView.swift; sourceTree = "<group>"; };
 		F861F4302E730E7200709F8D /* AppScrollContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScrollContentViewModel.swift; sourceTree = "<group>"; };
 		F868FA0D2E0A895500C2D83B /* SwiftUI-Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Animations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -531,6 +535,8 @@
 		F83318E62E3A0CA500B3B2A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F85746952ED7EAAD00B166B9 /* CustomPagedView.swift */,
+				F85746932ED7EAA500B166B9 /* MyCardWalletFlowSegViewV3.swift */,
 				F843CA732E3A74C100B441D6 /* SegmentTabbarView.swift */,
 				F83318FD2E3A32EF00B3B2A0 /* SegmentTabViewModel.swift */,
 				F83318FB2E3A32E700B3B2A0 /* SegmentContentView.swift */,
@@ -823,6 +829,7 @@
 				F83318B32E3A0AAF00B3B2A0 /* TimerView.swift in Sources */,
 				F83318B42E3A0AAF00B3B2A0 /* LoopingStack.swift in Sources */,
 				F83318B52E3A0AAF00B3B2A0 /* LoopingStackExampleView.swift in Sources */,
+				F85746942ED7EAA500B166B9 /* MyCardWalletFlowSegViewV3.swift in Sources */,
 				F83318B62E3A0AAF00B3B2A0 /* ArcTribune.swift in Sources */,
 				F83318B72E3A0AAF00B3B2A0 /* Field.swift in Sources */,
 				F822CF772E5EA82D0084D625 /* FocusApp.swift in Sources */,
@@ -848,6 +855,7 @@
 				F83318C12E3A0AAF00B3B2A0 /* WaveShape.swift in Sources */,
 				F83318C22E3A0AAF00B3B2A0 /* BallView.swift in Sources */,
 				F83318C32E3A0AAF00B3B2A0 /* Constants.swift in Sources */,
+				F85746962ED7EAAD00B166B9 /* CustomPagedView.swift in Sources */,
 				F83318F22E3A16B600B3B2A0 /* HomeView.swift in Sources */,
 				F83318C42E3A0AAF00B3B2A0 /* Event.swift in Sources */,
 				F83318C52E3A0AAF00B3B2A0 /* EventView.swift in Sources */,

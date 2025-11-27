@@ -21,7 +21,7 @@ struct LoopingStackExampleView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .frame(height: 420)
+//        .frame(height: 420)
       
     }
 }
