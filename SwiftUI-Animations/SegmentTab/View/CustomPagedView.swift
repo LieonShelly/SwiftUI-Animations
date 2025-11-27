@@ -20,7 +20,7 @@ enum DragStatus {
         }
     }
     
-    var isHorizontakDragging: Bool {
+    var isHorizontalDragging: Bool {
         switch self {
         case .inactive: return false
         case let .dragging(_, isHorizontal): return isHorizontal
@@ -40,17 +40,23 @@ struct PageView<Content: View>: View {
             HStack(spacing: 0) {
                 content
                     .frame(width: width)
-                    .allowsTightening(!dragStatus.isHorizontakDragging)
+                    .disabled(dragStatus.isHorizontalDragging)
             }
             .frame(width: width * CGFloat(pageCount), alignment: .leading)
             .offset(x: -CGFloat(currentIndex) * width + currentOffset(width: width))
-            .animation(.interactiveSpring(response: 0.3, dampingFraction: 0.8), value: dragStatus.translation)
-            .animation(.interactiveSpring(response: 0.3, dampingFraction: 0.8), value: currentIndex)
+            .animation(.easeInOut, value: dragStatus.translation)
+            .animation(.easeInOut, value: currentIndex)
             .simultaneousGesture(
                 DragGesture()
                     .updating($dragStatus) { value, state, _ in
-                        let isHorizontal = abs(value.translation.width) > abs(value.translation.height)
-                        state = .dragging(translation: value.translation.width, isHorizontal: isHorizontal)
+                        let currentIsHorizontal = abs(value.translation.width) > abs(value.translation.height)
+                        var finalIsHorizontal = currentIsHorizontal
+                        if case .dragging(_, let wasHorizontalAlready) = state {
+                            if wasHorizontalAlready {
+                                finalIsHorizontal = true
+                            }
+                        }
+                        state = .dragging(translation: value.translation.width, isHorizontal: finalIsHorizontal)
                     }
                     .onEnded { value in
                         let isHorizontalDrag = abs(value.translation.width) > abs(value.translation.height)
